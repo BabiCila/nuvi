@@ -1,0 +1,8 @@
+.background_header {
+    background-image: url("../img/shape_cabecalho.svg");
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 20%;
+}
