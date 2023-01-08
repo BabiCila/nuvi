@@ -132,8 +132,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    height: 135vh;
 
     /*
     background-image: url(../img/ondas.svg);
@@ -218,15 +216,14 @@ body {
 
 .about__place-map {
     border: 8px solid var(--green-location);
-    position: absolute;
     bottom: 100px;
-    width: 70%;
+    width: 75%;
     height: 20%;
 }
 
 .about__place--waves {
     position: absolute;
-    bottom: -161px;
+    top: 1766px;
     left: -345px;
 }
 
