@@ -1,3 +1,77 @@
+let form = document.querySelector('form');
+let nome = document.getElementById('name');
+let email = document.getElementById('email');
+let msg = document.getElementById('msg');
+let textMessage = document.getElementById('textMessage');
+let textName = document.getElementById('textName');
+let textEmail = document.getElementById('textEmail');
+let textForm = document.getElementById('textForm');
+
+
+function validationName(nome) {
+    let namePattern = /^([A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+([\-'`][A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+)?)( [A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+([\-'`][A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+)?)+$/gm
+    return namePattern.test(nome);
+}
+
+function validationEmail(email) {
+    let emailPattern = /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm
+    return emailPattern.test(email);
+}
+
+function validationMessage(msg) {
+    let msgPattern = /[A-Za-zéúíóÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\!\?\.\@\,\w\s*\-'`’“”:]{9,}/; //entrar com números //if 
+    return msgPattern.test(msg)
+    // return msg.trim() === "";
+}
+
+nome.addEventListener("keyup", () => {
+    if(validationName(nome.value) !== true) {
+        textName.textContent = "Nome e Sobrenome. Não utilizar números."
+    } else {
+        textName.textContent = " ";
+    }
+})
+
+email.addEventListener("keyup", () => {
+    if(validationEmail(email.value) !== true) {
+        textEmail.textContent = "O formato do email deve ser nome@servidor.com"
+    } else {
+        textEmail.textContent = " "
+    }
+})
+
+
+msg.addEventListener("keyup", () => {
+    if(!validationMessage(msg.value)) {
+        textMessage.textContent = "Escreva um texto de no mínimo 10 caracteres antes de enviar seu formulário."
+    } else {
+        textMessage.textContent = " ";
+    }
+})
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if(nome.value == "" &&
+    email.value == "" &&
+    msg.value == "") {
+        textForm.textContent = "Você precisa preencher todos os campos"
+    } else if (
+        validationName(nome.value) &&
+        validationEmail(email.value) &&
+        validationMessage(msg.value)
+    ) {
+        console.log(nome.value);
+        console.log(email.value);
+        console.log(msg.value);
+
+    } else {
+        textForm.textContent = "Você precisa preeencher todos os campos"
+        console.log ("Requisição não atendida");
+    }
+
+});
+
 
 
 function localizacao(local) {
