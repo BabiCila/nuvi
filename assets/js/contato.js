@@ -19,13 +19,14 @@ function validationEmail(email) {
 }
 
 function validationMessage(msg) {
-    let msgPattern = /[A-Za-zéúíóÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\!\?\.\@\,\w\s*\-'`’“”:]{9,}/; //entrar com números //if 
-    return msgPattern.test(msg)
-    // return msg.trim() === "";
+    //let msgPattern = /[A-Za-zéúíóÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\!\?\.\@\,\w\s*\-'`’“”:]{9,}/; //entrar com números //if 
+    //return msgPattern.test(msg)
+    return msg.trim() === "";
 }
 
 nome.addEventListener("keyup", () => {
-    if(validationName(nome.value) !== true) {
+
+    if(validationName(nome.value.trim()) !== true) {
         textName.textContent = "Nome e Sobrenome. Não utilizar números."
     } else {
         textName.textContent = " ";
@@ -33,7 +34,7 @@ nome.addEventListener("keyup", () => {
 })
 
 email.addEventListener("keyup", () => {
-    if(validationEmail(email.value) !== true) {
+    if(validationEmail(email.value)!== true) {
         textEmail.textContent = "O formato do email deve ser nome@servidor.com"
     } else {
         textEmail.textContent = " "
@@ -42,8 +43,8 @@ email.addEventListener("keyup", () => {
 
 
 msg.addEventListener("keyup", () => {
-    if(!validationMessage(msg.value)) {
-        textMessage.textContent = "Escreva um texto de no mínimo 10 caracteres antes de enviar seu formulário."
+    if(validationMessage(msg.value)) {
+        textMessage.textContent = "Escreva uma mensagem antes de clicar em enviar."
     } else {
         textMessage.textContent = " ";
     }
@@ -59,7 +60,7 @@ form.addEventListener("submit", (e) => {
     } else if (
         validationName(nome.value) &&
         validationEmail(email.value) &&
-        validationMessage(msg.value)
+        validationMessage(msg.value) !== true
     ) {
         console.log(nome.value);
         console.log(email.value);
