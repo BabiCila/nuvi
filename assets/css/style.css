@@ -123,7 +123,62 @@ body {
 
 /* portifolio */
 
+.portfolio__title {
+    color: var(--font-purple);   
+    font-weight: 749;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 4.2rem;
+}
 
+.portfolio__text {
+    color: var(--font-lilac);
+    text-align: center;
+}
+
+.portfolio__projects{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 2em 3em;
+    gap: 0.2em;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    justify-content: center; */
+}
+
+.portfolio__button {
+    width: 49%;
+    height: 3.3em;
+    border: none;
+    border-radius: 0.25rem;
+    background-repeat: no-repeat;
+}
+
+.animation {
+    background-image: url(../img/logo_animation.svg);
+}
+
+.design {
+    background-image: url(../img/logo_design.svg);
+}
+
+.custom {
+    background-image: url(../img/custom_animation.svg);
+}
+
+.intro {
+    background-image: url(../img/intro_e_outro.svg);
+}
+
+.redesign {
+    background-image: url(../img/logo_redesign.svg);
+}
+
+.graphic{
+    background-image: url(../img/graphic_design.svg);
+}
 
 /* about us */
 
