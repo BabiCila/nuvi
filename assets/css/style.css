@@ -181,28 +181,36 @@ body {
     font-size: 9px;
 }
 
+
+
+
+
+/* footer */
+
+
 .location-pin {
     width: 70px;
 }
 
 .about__place {
     display: flex;
-    margin-top: 10px;
     justify-content: center;
-    width: 70px;
-    margin: 40px;
+    /* width: 108px; */
+    /* margin: 0em 0em 0em 0em; */
     gap: 12px;
+    /* padding-top: 4em; */
+    padding: 5em 6em;
 }
 
 .about__place-text {
-    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .about__place-title {
     color: var(--font-purple);
-    text-transform: uppercase;
     font-weight: 750;
-    font-size: 30px;
+    font-size: 1.77rem;
     line-height: 0.9;
     margin-bottom: 0;
 }
@@ -211,7 +219,6 @@ body {
     color: var(--font-purple);
     font-size: 9px;
     margin-top: 9px;
-
 }
 
 .about__place-map {
@@ -221,22 +228,17 @@ body {
     height: 20%;
 }
 
-.about__place--waves {
-    position: absolute;
-    top: 1766px;
-    left: -345px;
-}
-
 /* contact */
 
 .final {
-    /* background: var(--gradient); */
-    background-image: url(../img/shape_rodape.svg);
+    background-image: url(../img/rodape_desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 100px 50px 50px 50px;
-    height: 82vh;
+    background-size: 185%;
+    background-position-x: center;
+}
+
+.contact {
+    padding: 80px 50px 30px 50px;
 }
 
 .contact__title {
@@ -308,7 +310,6 @@ body {
     font-size: 0.6em;
 
 }
-
 
 
 /* social media */
