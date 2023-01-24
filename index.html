@@ -16,25 +16,15 @@
       <nav class="navbar bg-light fixed-top header__background">
         <div class="container-fluid" >
           <img src="./assets/img/logo.svg" class="logo">
-          <div class="header__text">
-            <h1 class="header__title">MOTION AND DESIGN</h1>
-            <p class="header__subtitle">Your brand can come to life</p>
-          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon icone"></span>
             </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="offcanvas__logo" src="./assets/img/logo.svg"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar"> 
-                <li class="nav-item" >
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">                
                 <li class="nav-item">
-                  <a class="nav-link" onclick = 'localizacao("#portfolio")'>Portfolio</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About Us</a>
@@ -43,13 +33,6 @@
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
-              <!-- 
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              -->
-             
             </div>
           </div>
         </div>
@@ -57,7 +40,7 @@
     </header>
 
     <main id="main">
-        <section class="videos" id="home"></section>  <!--style="border: 1px solid #f00"-->
+        <section class="videos" id="home"></section>  
         <section class="portfolio" id="portfolio">
           <h1 class="portfolio__title">Portfolio</h1>
           <p class="portfolio__text">What kind of prooject do you need?</p>

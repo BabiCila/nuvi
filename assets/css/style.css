@@ -30,18 +30,23 @@ body {
 
 .header__background {
    
+    /*
     background:
         linear-gradient( 217deg, #39e5ba, rgba(255, 0, 0, 0) 70.71% ),
         linear-gradient(127deg, #54E1FF, rgba(0, 255, 0, 0) 38.71%),
         linear-gradient(336deg, #00087d, rgba(0, 0, 255, 0) 145.71%);
+    */
+    background-image: url(/assets/img/shape_cabecalho.svg);
+    background-size: cover;
     width: 100%;
-    height: 14vh;
+    height: 14%;
+    background-repeat: no-repeat;
 }
 
 .header__box {
-    /* padding: 12rem; */
-    height: 7rem;
+    height: auto;
 }
+
 
 .logo {
     width: 4.5rem;
@@ -75,6 +80,8 @@ body {
 
 .navbar {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    --bs-navbar-padding-x: 1rem;
+    --bs-navbar-padding-y: 1rem;
 }
 
 .navbar-toggler:focus {
@@ -90,19 +97,31 @@ body {
 }
 
 .container-fluid {
-    padding-right: calc(var(--bs-gutter-x) * 0.8);
-    padding-left: calc(var(--bs-gutter-x) * 1.2);
+    padding: calc(var(--bs-gutter-x) * 1);
+    position: relative;
+   
 }
 
 
 .offcanvas {
-    background: var(--gradient);
+    background-image: url(/assets/img/bg_menu.svg);
+    background-repeat: no-repeat;
+    background-size: 98%;
+    --bs-offcanvas-bg: transparent;
+    width: 50% !important;
+    height: 205% !important;
+    position: absolute;
+    top: 70px !important;
+    left: 150px !important;
+ 
 }
 
+/*
 .offcanvas__logo {
     width: 80px;
     padding-top: 20px;
 }
+*/
 
 .navbar-nav {
     --bs-nav-link-color: var(--font-white);
@@ -112,6 +131,10 @@ body {
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: var(--font-purple);
+}
+
+.btn-close {
+    padding-left: 90%;
 }
 
 /* videos */
