@@ -202,9 +202,9 @@ body {
 
 .about__title {
     color: var(--font-purple);   
-    text-transform: uppercase;
     font-weight: 749;
-    font-size: 35px;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 .about__subtitle {
@@ -213,22 +213,24 @@ body {
 
 .about__text {
     color: var(--font-lilac);
-    text-align: center;
+    text-align: justify;
+    line-height: 1.2rem;
 }
 
 .about__colab {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .colaborator__img {
-    width: 40%;
+    width: 48%;
+    margin: 1em auto 0.5em auto;
 }
 
 .colaborator__title {
-    color: var(--font-purple);   
-    text-transform: uppercase;  
+    color: var(--font-purple);    
     font-weight: 750;
     font-size: large;
     margin-bottom: auto;
@@ -237,7 +239,7 @@ body {
 
 .colaborator__subtitle {
     color: var(--font-lilac);
-    font-size: 9px;
+    font-size: 0.8rem;
 }
 
 .location-pin {
@@ -248,20 +250,20 @@ body {
     display: flex;
     margin-top: 10px;
     justify-content: center;
-    width: 70px;
+    width: 13em;
     margin: 40px;
     gap: 12px;
+    z-index: 1;
 }
 
 .about__place-text {
-    margin-top: 30px;
+    margin: auto;
 }
 
 .about__place-title {
     color: var(--font-purple);
-    text-transform: uppercase;
     font-weight: 750;
-    font-size: 30px;
+    font-size: 2.1rem;
     line-height: 0.9;
     margin-bottom: 0;
 }
@@ -273,17 +275,10 @@ body {
 
 }
 
-.about__place-map {
-    border: 8px solid var(--green-location);
-    bottom: 100px;
-    width: 75%;
-    height: 20%;
-}
-
 .about__place--waves {
     position: absolute;
-    top: 1766px;
-    left: -345px;
+    top: 108em;
+    left: -21em;
 }
 
 /* contact */
