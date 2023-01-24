@@ -16,25 +16,15 @@
       <nav class="navbar bg-light fixed-top header__background">
         <div class="container-fluid" >
           <img src="./assets/img/logo.svg" class="logo">
-          <div class="header__text">
-            <h1 class="header__title">MOTION AND DESIGN</h1>
-            <p class="header__subtitle">Your brand can come to life</p>
-          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon icone"></span>
             </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="offcanvas__logo" src="./assets/img/logo.svg"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar"> 
-                <li class="nav-item" >
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">                
                 <li class="nav-item">
-                  <a class="nav-link" onclick = 'localizacao("#portfolio")'>Portfolio</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About Us</a>
@@ -43,13 +33,6 @@
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
-              <!-- 
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              -->
-             
             </div>
           </div>
         </div>
@@ -57,18 +40,29 @@
     </header>
 
     <main id="main">
-        <section class="videos" id="home"></section>  <!--style="border: 1px solid #f00"-->
+        <section class="videos" id="home"></section>  
         <section class="portfolio" id="portfolio">
+          <h1 class="portfolio__title">Portfolio</h1>
+          <p class="portfolio__text">What kind of prooject do you need?</p>
+          <div class="portfolio__projects">
+           <button class="portfolio__button animation"></button>
+           <button class="portfolio__button design"></button>
+           <button class="portfolio__button custom"></button>
+           <button class="portfolio__button intro"></button>
+           <button class="portfolio__button redesign"></button>
+           <button class="portfolio__button graphic"></button>
+          </div>
+       
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/img/Nubia_foto_teste.png" class="d-block w-100" alt="...">
+                <img src="./assets/img/display.svg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/Nubia_foto_teste.png" class="d-block w-100" alt="...">
+                <img src="./assets/img/display.svg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/Nubia_foto_teste.png" class="d-block w-100" alt="...">
+                <img src="./assets/img/display.svg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -82,17 +76,19 @@
           </div>
         </section>
         <section class="about" id="about">
-          <h1 class="about__title">Studio Nuvi</h1>
-          <p class="about__subtitle">Lorem, ipsum dolor.</p>
-          <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, blanditiis praesentium odio adipisci facilis, nostrum iste enim quod aliquid impedit earum eveniet eius aut facere ut itaque recusandae? Praesentium, beatae.</p>
+          <div>
+            <h1 class="about__title">Nuvi Studio</h1>
+            <p class="about__subtitle">Lorem ipsum dolor, sit amet consectetur</p>
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis culpa accusamus suscipit error eaque nam, rem aliquid vel obcaecati! Consequatur itaque dignissimos assumenda optio qui consequuntur, corrupti soluta nulla obcaecati rerum vel voluptates magni esse temporibus necessitatibus quibusdam eum veniam suscipit. Tenetur natus dolor earum voluptate nam accusamus. Odio architecto amet ab repellat quod quasi voluptates assumenda vero sint!</p>
+          </div>
           <div class="about__colab">
             <div class="colaborator">
-              <img src="./assets/img/Nubia_foto_teste.png" alt="" class="colaborator__img">
+              <img src="./assets/img/foto_nubia.png" alt="" class="colaborator__img">
               <p class="colaborator__title">Nubia Sardou</p>
               <p class="colaborator__subtitle">Creative Director and Founder</p>
             </div>
             <div class="colaborator">
-              <img src="./assets/img/Nubia_foto_teste.png" alt="" class="colaborator__img">
+              <img src="./assets/img/foto_vitor.png" alt="" class="colaborator__img">
               <p class="colaborator__title">Vitor Farias</p>
               <p class="colaborator__subtitle">Creative Director and Founder</p>
             </div>
