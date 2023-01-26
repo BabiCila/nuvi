@@ -91,11 +91,13 @@ body {
     --bs-navbar-padding-y: 1rem;
 }
 
+.buttons {
+
+}
+
 .btn-language-pt {
     background-color: transparent;
     border: none;
-    position: absolute;
-    left: 15rem;
     font-size: small;
     color: var(--font-white);
 }
@@ -104,12 +106,9 @@ body {
     background-color: transparent;
     display: none;
     border: none;
-    position: absolute;
-    left: 15rem;
     font-size: small;
     color: var(--font-white);
 }
-
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0;
