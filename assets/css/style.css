@@ -49,7 +49,7 @@ body {
     background-size: cover;
     background-position-x: center;
     width: 100%;
-    height: 14%;
+    height: 15%;
     background-repeat: no-repeat;
 }
 
@@ -91,10 +91,6 @@ body {
     --bs-navbar-padding-y: 1rem;
 }
 
-.buttons {
-
-}
-
 .btn-language-pt {
     background-color: transparent;
     border: none;
@@ -133,15 +129,15 @@ body {
     background-image: url(/assets/img/bg_menu.svg);
     background-repeat: no-repeat;
     background-size: 91%;
+    background-position-y: 100%;
     --bs-offcanvas-bg: transparent;
     --bs-offcanvas-padding-y: 0rem;
-    width: 37% !important;
-    height: 175% !important;
+    width: 37%;
+    height: 175%;
     position: absolute;
-    top: 4rem !important;
-    left: 12.4rem !important;
+    top: 4rem;
+    right: 0.5rem;
 }
-
 
 .navbar-nav {
     font-weight: bold;
@@ -149,11 +145,12 @@ body {
     text-align-last: end;
     font-size: 0.7rem;
     padding-right: 0.2rem !important;
-    margin-top: 0.3rem;
+    margin-top: 0.6rem;
     --bs-nav-link-padding-y: 0.4rem;
     --bs-nav-link-color: var(--font-white);
     --bs-nav-link-hover-color: var(--font-purple);
     --bs-nav-link-disabled-color: var(--font-white);
+    text-align: end;
 }
 
 /* header-menu */
@@ -164,17 +161,17 @@ body {
 
 .btn-close {
     box-sizing: border-box;
-    height: 0.3em;
-    width: 0rem;
+    height: 1.5em;
+    width: 1rem;
     opacity: 1;
-    margin-left: 4.8rem;
+    /* margin-left: 4.8rem; */
 }
 
 /* videos */
 
 .videos {
-    background-color: #00087d;
-    height: 60vh;
+    background-color: var(--font-lilac);
+    height: 40em;
 }
 
 /* portifolio */
