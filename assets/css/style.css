@@ -47,6 +47,7 @@ body {
 .header__background {
     background-image: url(/assets/img/shape_cabecalho.svg);
     background-size: cover;
+    background-position-x: center;
     width: 100%;
     height: 14%;
     background-repeat: no-repeat;
@@ -90,12 +91,32 @@ body {
     --bs-navbar-padding-y: 1rem;
 }
 
+.buttons {
+
+}
+
+.btn-language-pt {
+    background-color: transparent;
+    border: none;
+    font-size: small;
+    color: var(--font-white);
+}
+
+.btn-language-en {
+    background-color: transparent;
+    display: none;
+    border: none;
+    font-size: small;
+    color: var(--font-white);
+}
+
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0;
 }
 
 .navbar-toggler {
     border: none;
+    padding-right: 0;
 }
 
 .navbar-toggler-icon {
@@ -103,23 +124,33 @@ body {
 }
 
 .container-fluid {
-    padding: calc(var(--bs-gutter-x) * 1);
+        /* padding: calc(var(--bs-gutter-x) * 1); */
+    padding: 1rem;
     position: relative;
 }
 
 .offcanvas {
     background-image: url(/assets/img/bg_menu.svg);
     background-repeat: no-repeat;
-    background-size: 98%;
+    background-size: 91%;
     --bs-offcanvas-bg: transparent;
-    width: 50% !important;
-    height: 205% !important;
+    --bs-offcanvas-padding-y: 0rem;
+    width: 37% !important;
+    height: 175% !important;
     position: absolute;
-    top: 70px !important;
-    left: 150px !important;
+    top: 4rem !important;
+    left: 12.4rem !important;
 }
 
+
 .navbar-nav {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align-last: end;
+    font-size: 0.7rem;
+    padding-right: 0.2rem !important;
+    margin-top: 0.3rem;
+    --bs-nav-link-padding-y: 0.4rem;
     --bs-nav-link-color: var(--font-white);
     --bs-nav-link-hover-color: var(--font-purple);
     --bs-nav-link-disabled-color: var(--font-white);
@@ -132,7 +163,11 @@ body {
 }
 
 .btn-close {
-    padding-left: 90%;
+    box-sizing: border-box;
+    height: 0.3em;
+    width: 0rem;
+    opacity: 1;
+    margin-left: 4.8rem;
 }
 
 /* videos */
