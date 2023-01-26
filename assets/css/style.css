@@ -1,19 +1,33 @@
 :root {
     --gradient: linear-gradient( 217deg, #39e5ba, rgba(255, 0, 0, 0) 70.71% ), linear-gradient(127deg, #54E1FF, rgba(0, 255, 0, 0) 38.71%), linear-gradient(336deg, #00087d, rgba(0, 0, 255, 0) 145.71%);
     --font-purple: #2E3192;
-    --font-lilac: #7C85D6;
+    --font-lilac: #98A3E5;
+    --font-lilac-darker: #98a0d1;
     --font-white: #FFF;
     --bg-grey: #F7F7F7;
     --bg-lightblue: #F3FFFF;
     --green-location: #42cd9c;
 }
 
-
 @font-face {
     font-family: "Guanabara";
     src: url("../fonts/Guanabara_Sans_Bold.otf");
     font-style: normal;
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "Guanabara";
+    src: url("../fonts/Guanabara_Sans_Medium.otf");
+    font-style: normal;
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Guanabara";
+    src: url("../fonts/Guanabara_Sans_Book.otf");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
@@ -28,14 +42,9 @@ body {
     background-color: var(--bg-lightblue);
 }
 
+/* header */
+
 .header__background {
-   
-    /*
-    background:
-        linear-gradient( 217deg, #39e5ba, rgba(255, 0, 0, 0) 70.71% ),
-        linear-gradient(127deg, #54E1FF, rgba(0, 255, 0, 0) 38.71%),
-        linear-gradient(336deg, #00087d, rgba(0, 0, 255, 0) 145.71%);
-    */
     background-image: url(/assets/img/shape_cabecalho.svg);
     background-size: cover;
     width: 100%;
@@ -47,7 +56,6 @@ body {
     height: auto;
 }
 
-
 .logo {
     width: 4.5rem;
 }
@@ -56,7 +64,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .header__title {
@@ -66,7 +73,6 @@ body {
     text-align: center;
     margin-bottom: -0.2em;
     font-weight: 700;
-    
 }
 
 .header__subtitle {
@@ -99,9 +105,7 @@ body {
 .container-fluid {
     padding: calc(var(--bs-gutter-x) * 1);
     position: relative;
-   
 }
-
 
 .offcanvas {
     background-image: url(/assets/img/bg_menu.svg);
@@ -113,21 +117,15 @@ body {
     position: absolute;
     top: 70px !important;
     left: 150px !important;
- 
 }
-
-/*
-.offcanvas__logo {
-    width: 80px;
-    padding-top: 20px;
-}
-*/
 
 .navbar-nav {
     --bs-nav-link-color: var(--font-white);
     --bs-nav-link-hover-color: var(--font-purple);
     --bs-nav-link-disabled-color: var(--font-white);
 }
+
+/* header-menu */
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: var(--font-purple);
@@ -149,35 +147,35 @@ body {
 .portfolio__title {
     color: var(--font-purple);   
     font-weight: 749;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: center;
-    padding-top: 4.2rem;
+    padding-top: 6rem;
 }
 
 .portfolio__text {
-    color: var(--font-lilac);
+    color: var(--font-lilac-darker);
+    font-size: 0.85rem;
+    font-weight: 400;
     text-align: center;
 }
 
-.portfolio__projects{ 
+.portfolio__projects {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 65%;
+    width: 64%;
     margin: 2em auto;
-    gap: 0.2em;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    justify-content: center; */
+    gap: 0.3em;
 }
 
 .portfolio__button {
-    width: 49%;
+    width: 48%;
     height: 2.7em;
     border: none;
     border-radius: 0.25rem;
     background-repeat: no-repeat;
-}
+    background-size: cover;
+}    
 
 .animation {
     background-image: url(../img/logo_animation.svg);
@@ -210,34 +208,32 @@ body {
 /* about us */
 
 .about {
-    padding: 35px;
+    padding: 6rem 2.1em 1em 2.1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /*
-    background-image: url(../img/ondas.svg);
-    background-repeat: no-repeat;
-    background-size: 150%;
-    height: 200vh;
-    background-position-y: 110%; */
 }
 
 .about__title {
     color: var(--font-purple);   
     font-weight: 749;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
 .about__subtitle {
-    color: var(--font-purple);
+    color: var(--font-lilac-darker);
+    text-align: start;
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .about__text {
     color: var(--font-lilac);
     text-align: justify;
-    line-height: 1.2rem;
+    line-height: 1rem;
+    font-weight: 100;
+    font-size: 0.85rem;
 }
 
 .about__colab {
@@ -265,12 +261,7 @@ body {
     font-size: 0.8rem;
 }
 
-
-
-
-
 /* footer */
-
 
 .location-pin {
     width: 70px;
@@ -279,16 +270,16 @@ body {
 .about__place {
     display: flex;
     justify-content: center;
-    /* width: 108px; */
-    /* margin: 0em 0em 0em 0em; */
     gap: 12px;
-    /* padding-top: 4em; */
     padding: 5em 6em;
 }
 
 .about__place-text {
     display: flex;
     align-items: center;
+    overflow: auto;
+    white-space: pre-line;
+    width: 7em;
 }
 
 .about__place-title {
@@ -336,7 +327,7 @@ body {
 .contact__label {
     display: block;
     color: var(--font-white);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     margin-top: 1em;
     font-weight: 700;
 }
@@ -365,7 +356,6 @@ body {
     color: var(--font-purple);
     font-size: 0.7rem;
     font-weight: 600;
-    /* letter-spacing: 0.3em; */
     padding: 0.25em 2.4em;
     background-color: var(--font-white);
     margin-bottom: 20px;
@@ -392,15 +382,13 @@ body {
 .contact__phone {
     margin-bottom: 4em;
     text-align: center;
-    font-size: 0.55rem;
+    font-size: 0.rem;
 }
 
 .text_msg {
     color: var(--font-white);
     font-size: 0.6em;
-
 }
-
 
 /* social media */
 
