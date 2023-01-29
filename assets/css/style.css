@@ -352,11 +352,9 @@ body {
 /* contact */
 
 .final {
-    background-image: url(../img/rodape_desktop.svg);
+    background-image: url(../img/rodape_mobile.svg);
     background-repeat: no-repeat;
-    background-size: 185%;
-    background-position-x: center;
-    background-position-y: bottom;
+    background-size: cover;
 }
 
 .contact {
