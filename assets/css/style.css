@@ -128,17 +128,19 @@ body {
 }
 
 .offcanvas {
-    background-image: url(/assets/img/bg_menu.svg);
+    background-color: var(--font-purple);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     background-repeat: no-repeat;
     background-size: 91%;
     background-position-y: 100%;
     --bs-offcanvas-bg: transparent;
     --bs-offcanvas-padding-y: 0rem;
-    width: 37%;
-    height: 175%;
+    width: 51vw;
+    height: 29vh;
     position: absolute;
     top: 4rem;
-    right: 0.5rem;
+    right: 1.3rem;
 }
 
 /*background-repeat: no-repeat;
@@ -157,14 +159,15 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     text-align-last: end;
-    font-size: 0.7rem;
+    font-size: 2vh;
     padding-right: 0.2rem !important;
-    margin-top: 0.6rem;
+    margin-top: 1rem;
     --bs-nav-link-padding-y: 0.4rem;
     --bs-nav-link-color: var(--font-white);
     --bs-nav-link-hover-color: var(--font-purple);
     --bs-nav-link-disabled-color: var(--font-white);
     text-align: end;
+    row-gap: 1em;
 }
 
 /* header-menu */
