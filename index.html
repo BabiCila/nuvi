@@ -12,7 +12,41 @@
   </head>
 
   <body>
-    <header class="header__box">
+    <header class="header__box-new">
+      <nav class="container-new">
+        <div>
+          <img src="./assets/img/logo.svg" class="logo-new">
+        </div>
+        <div class="buttons">
+          <button class="btn-pt btn" type="button">PT</button>
+          <button class="btn-en btn" type="button">EN</button>
+          <input type="checkbox" id="menu" class="menu__check">
+          <label for="menu">
+            <img src="./assets/img/icon_menu.svg" class="menu__icon-new">
+          </label>
+          <ul class="menu__list">
+            <li class="menu__item">
+                <buttom class="menu__btn-close" id="btn-close">x</buttom>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Get in touch</a>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
+      
+    </header>
+    <!--<header class="header__box">
       <nav class="navbar bg-light fixed-top header__background">
         <div class="container-fluid" >
           <img src="./assets/img/logo.svg" class="logo">
@@ -25,7 +59,7 @@
           </div>
           <div class="offcanvas offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-body">
-              <!-- <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
               <ul class="navbar-nav justify-content-end flex-grow-1 p-0" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">    
                 <li class="nav-item">
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -44,7 +78,8 @@
           </div>
         </div>
       </nav>
-    </header>
+    </header> -->
+  
 
     <main id="main">
         <section class="videos" id="home"></section>  
@@ -109,10 +144,10 @@
       <div class="about__place">
         <img class="location-pin" src="./assets/img/localizacao.svg" alt="">
         <div class="about__place-text">
-          <p class="about__place-title" id="contact">Based in Rio, Brazil</p>
+          <p class="about__place-title">Based in Rio, Brazil</p>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2 class="contact__title">Get in touch</h2>
       <form class="contact__form" action="/pagina-processa-dados-do-form" method="post">
         <div>
