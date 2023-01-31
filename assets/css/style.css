@@ -42,6 +42,90 @@ body {
     background-color: var(--bg-lightblue);
 }
 
+/*teste novo menu*/
+
+.header__box-new { 
+    background-image: url(../img/header-mobile.svg);
+    background-size: 130%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    z-index: 1;
+}
+
+.logo-new {
+    width: 4.5rem;
+}
+
+.container-new {
+    display: flex;
+    padding: 1.8em;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--font-white);
+}
+
+.btn-en {
+    display: none;
+}
+
+.menu__icon-new {
+    width: 1.3em;
+}
+
+.menu__check {
+    display: none;
+}
+
+.menu__list {
+    margin-top: 0.6em;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: var(--font-purple);
+    padding-top: 0.6em;
+    padding-bottom: 0.8em;
+    right: 1.8em;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+.menu__check:checked ~ .menu__list {
+    display: block;
+}
+
+.menu__btn-close {
+    padding-top: 0.2em;
+}
+
+.menu__item {
+    color: var(--font-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.3em 1em 0.9em 0;
+    text-align: end;
+}
+
+.menu__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--font-white);
+    font-weight: 700;
+}
+
+.menu__link:visited {
+    color:white;
+}
+
 /* header */
 
 .header__background {
@@ -59,30 +143,6 @@ body {
 
 .logo {
     width: 4.5rem;
-}
-
-.header__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.header__title {
-    font-size: 12px;
-    color: var(--font-white);
-    letter-spacing: -0.1px;
-    text-align: center;
-    margin-bottom: -0.2em;
-    font-weight: 700;
-}
-
-.header__subtitle {
-    font-size: 7px;
-    color: var(--font-white);
-    font-weight: 400;
-    letter-spacing: -0.2px;
-    text-align: center;
-    margin-bottom: auto;
 }
 
 .navbar {
