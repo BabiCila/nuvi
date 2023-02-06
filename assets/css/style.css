@@ -46,29 +46,31 @@ body {
 
 .header__box-new { 
     background-image: url(../img/header-mobile.svg);
-    background-size: 130%;
+    background-size: 100%;
     background-position-x: center;
     background-repeat: no-repeat;
     position: fixed;
     width: 100vw;
-    height: 12vh;
-    z-index: 1;
+    height: 14.5vh;
+    z-index: 2;
 }
 
 .logo-new {
-    width: 4.5rem;
+    width: 5em;
 }
 
 .container-new {
     display: flex;
     padding: 1.8em;
     justify-content: space-between;
+    height: 14.5vh;
+    align-items: center;
 }
 
 .btn {
     background-color: transparent;
     border: none;
-    font-size: 0.9rem;
+    font-size: 1.05em;
     font-weight: 700;
     color: var(--font-white);
 }
@@ -78,7 +80,7 @@ body {
 }
 
 .menu__icon-new {
-    width: 1.3em;
+    width: 1.4em;
 }
 
 .menu__check {
@@ -105,6 +107,7 @@ body {
 
 .menu__btn-close {
     padding-top: 0.2em;
+    padding-right: 0;
 }
 
 .menu__item {
@@ -215,6 +218,7 @@ body {
     right: 0.5rem;
 */
 
+
 .navbar-nav {
     font-weight: bold;
     text-transform: uppercase;
@@ -249,16 +253,23 @@ body {
 .videos {
     background-color: var(--font-lilac);
     height: 40em;
+    position: relative;
 }
 
 /* portifolio */
 
+#portfolio {
+    height: 5em;
+    position: absolute;
+    top: 85%;
+}
+
 .portfolio__title {
-    color: var(--font-purple);   
+    color: var(--font-purple);
     font-weight: 749;
     font-size: 1.7rem;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 2.5rem;
 }
 
 .portfolio__text {
