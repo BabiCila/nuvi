@@ -264,6 +264,10 @@ body {
     top: 85%;
 }
 
+.portfolio {
+    position: relative;
+}
+
 .portfolio__title {
     color: var(--font-purple);
     font-weight: 749;
@@ -327,8 +331,14 @@ body {
 
 /* about us */
 
+#about {
+    height: 5em;
+    position: absolute;
+    top: 85%;
+}
+
 .about {
-    padding: 6rem 2.1em 1em 2.1em;
+    padding: 3.5em 2.1em 1em 2.1em;
     display: flex;
     flex-direction: column;
     align-items: center;
