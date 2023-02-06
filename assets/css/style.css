@@ -353,14 +353,14 @@ body {
 
 .about__subtitle {
     color: var(--font-lilac-darker);
-    text-align: start;
+    text-align: left;
     font-weight: 400;
     font-size: 0.9rem;
 }
 
 .about__text {
     color: var(--font-lilac);
-    text-align: justify;
+    text-align: left;
     line-height: 1rem;
     font-weight: 100;
     font-size: 0.85rem;
