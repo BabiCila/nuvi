@@ -87,4 +87,7 @@ form.addEventListener("submit", (e) => {
 //     }, 300)
 // }
     
+function closeMenu(){
+    document.querySelector('#menu').checked=false
+}
 
