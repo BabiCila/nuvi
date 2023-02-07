@@ -8,7 +8,6 @@ let textEmail = document.getElementById('textEmail');
 let textForm = document.getElementById('textForm');
 
 
-
 function validationName(nome) {
     let namePattern = /^([A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+([\-'`][A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+)?)( [A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+([\-'`][A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+)?)+$/gm
     return namePattern.test(nome);
@@ -72,21 +71,6 @@ form.addEventListener("submit", (e) => {
 
 });
 
-
-
-// function localizacao(local) {
-//     setTimeout (function(){
-//         window.location.href=local
-//         var ex = document.getElementById('portfolio')
-//         console.log(ex.scrollTop)
-//         ex.scrollTo(0,100)
-//         ex.scrollBy(0,100)
-//         ex.scrollTop = 100
-//         console.log(ex.scrollTop)
-    
-//     }, 300)
-// }
-    
 function closeMenu(){
     document.querySelector('#menu').checked=false
 }
