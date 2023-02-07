@@ -319,7 +319,7 @@ body {
 }
 
 .about {
-    padding: 3.5em 1.8em 1em 1.8em;
+    padding: 3.5em 1.8em 0 1.8em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,50 +374,8 @@ body {
 
 /* footer */
 
-.location-pin {
-    width: 70px;
-}
-
-.about__place {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 5em 6em;
-}
-
-.about__place-text {
-    display: flex;
-    align-items: center;
-    overflow: auto;
-    white-space: pre-line;
-    width: 7em;
-}
-
-.about__place-title {
-    color: var(--font-purple);
-    font-weight: 750;
-    font-size: 1.77rem;
-    line-height: 0.9;
-    margin-bottom: 0;
-}
-
-.about__place-subtitle {
-    color: var(--font-purple);
-    font-size: 9px;
-    margin-top: 9px;
-}
-
-.about__place-map {
-    border: 8px solid var(--green-location);
-    bottom: 100px;
-    width: 75%;
-    height: 20%;
-}
-
-/* contact */
-
 .final {
-    background-image: url(../img/rodape_mobile.svg);
+    background-image: url(../img/Rodape_Mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -431,7 +389,7 @@ body {
     text-align: center;
     font-weight: 700;
     font-size: 24px;
-    margin-top: 30px;
+    margin-top: 3.5em;
 }
 
 .contact__label {
@@ -481,7 +439,7 @@ body {
 
 .contact__email {
     margin: 0;
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: 700;
 }
 
@@ -490,9 +448,9 @@ body {
 }
 
 .contact__phone {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     text-align: center;
-    font-size: 0.rem;
+    font-size: 0.6rem;
 }
 
 .text_msg {
@@ -510,15 +468,25 @@ body {
 
 .social-media__img {
     width: 8%;
-    height: 2vh;
+    height: 1.15em;
+}
+
+.about__place {
+    justify-content: center;
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.location-pin {
+    width: 5.5em;
 }
 
 .copyright {
     color: var(--font-white);
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     font-weight: 200;
     text-align: center;
-    margin: 12em auto 2em auto;
+    margin-bottom: 7em;
 }
 
 @media (min-width: 992px) {
