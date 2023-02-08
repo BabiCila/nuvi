@@ -20,7 +20,7 @@
     font-family: "Guanabara";
     src: url("../fonts/Guanabara_Sans_Medium.otf");
     font-style: normal;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 @font-face {
@@ -252,15 +252,15 @@ body {
 .portfolio__title {
     color: var(--font-purple);
     font-weight: 749;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
     padding-top: 2.5rem;
 }
 
-.portfolio__text {
+.portfolio__subtitle {
     color: var(--font-lilac-darker);
-    font-size: 0.85rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -335,12 +335,12 @@ body {
 .about__subtitle {
     color: var(--font-lilac-darker);
     text-align: justify;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
 .about__text {
-    color: var(--font-lilac);
+    color: var(--font-lilac-darker);
     text-align: justify;
     line-height: 1rem;
     font-weight: 100;
