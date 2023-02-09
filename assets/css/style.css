@@ -1,12 +1,10 @@
 :root {
-    --gradient: linear-gradient( 217deg, #39e5ba, rgba(255, 0, 0, 0) 70.71% ), linear-gradient(127deg, #54E1FF, rgba(0, 255, 0, 0) 38.71%), linear-gradient(336deg, #00087d, rgba(0, 0, 255, 0) 145.71%);
     --font-purple: #2E3192;
     --font-lilac: #98A3E5;
     --font-lilac-darker: #98a0d1;
     --font-white: #FFF;
     --bg-grey: #F7F7F7;
     --bg-lightblue: #F3FFFF;
-    --green-location: #42cd9c;
 }
 
 @font-face {
@@ -42,7 +40,7 @@ body {
     background-color: var(--bg-lightblue);
 }
 
-/*teste novo menu*/
+/*menu*/
 
 .header__box-new { 
     background-image: url(../img/header_mobile.svg);
@@ -387,8 +385,7 @@ body {
     padding-bottom: 7.2em;
 }
 
-@media (min-width: 992px) {
-    :root {
-        font-size: 2rem;
-    }
+@media screen and (min-width: 992px) {
+     
 }
+
