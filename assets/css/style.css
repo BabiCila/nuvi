@@ -387,5 +387,147 @@ body {
 
 @media screen and (min-width: 992px) {
      
+
+
+
+
+
+
+ /*Portfolio */
+
+    .portfolio__title {
+        font-size: 2.5rem;
+    }
+
+    .portfolio__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .portfolio__projects {
+        flex-wrap: nowrap;
+        margin: 2em auto 3em;
+        gap: 0.3em;
+    }
+
+    .portfolio__button {
+        height: 3.3em;
+    }
+
+    .carousel {
+        margin: auto 8em;
+    }
+
+    .carousel-inner {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    /* About */
+
+    .about {
+        margin: auto 4em;
+    }
+
+    .about__title {
+        font-size: 2.5rem;
+    }
+
+    .about__subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about__text {
+        color: var(--font-lilac-darker);
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 100;
+        font-size: 1.5rem;
+        margin: 1.3em 3em;
+    }
+
+    .about__founder {
+        display: flex;
+        text-align: center;
+        margin: 2rem;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .founder__title {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
+
+    .founder__subtitle {
+        display: inline-block;
+        font-size: 1.15rem;
+    }
+
+    .founder {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    /* Footer */
+
+    .final {
+        background-image: url(../img/rodape_desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .contact {
+        padding: 10em 30em 2em;
+    }
+
+    .contact__title {
+        font-size: 2.2rem;
+        margin-bottom: 1em;
+    }
+
+    .contact__label {
+        font-size: 1rem;
+    }
+
+    .contact__input {
+        line-height: 2rem;
+    }
+
+    .text_msg {
+        font-size: 0.7em;
+    }
+
+    .contact__button button {
+        font-size: 0.9rem;
+        margin: 1.5em;
+    }
+
+    .contact__email {
+        font-size: 1.1rem;
+    }
+
+    .contact__phone {
+        font-size: 0.9rem;
+    }
+
+    .social-media__img {
+        height: 1.6em;
+    }
+
+    .about__place {
+        padding: 4.5em 0 2.5em 0;
+    }
+
+    .location-pin {
+        width: 8.5em;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+
+
 }
 
