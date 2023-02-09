@@ -112,48 +112,49 @@
     <footer class="final">
       <div class="contact" id="contact">
         <h2 class="contact__title">Let's talk</h2>
-      <form class="contact__form" action="/pagina-processa-dados-do-form" method="post">
-        <div>
-            <label class="contact__label" for="name">Name</label>
-            <input class="contact__input" type="text" id="name" />
-            <small id="textName" class="text_msg"></small>
+        <form class="contact__form" action="/pagina-processa-dados-do-form" method="post">
+          <div>
+              <label class="contact__label" for="name">Name</label>
+              <input class="contact__input" type="text" id="name" />
+              <small id="textName" class="text_msg"></small>
+          </div>
+          <div>
+              <label class="contact__label" for="mail">Email</label>
+              <input class="contact__input" type="email" id="email" />
+              <small id="textEmail" class="text_msg"></small>
+          </div>
+          <div>
+              <label class="contact__label" for="msg">Message</label>
+              <textarea class="contact__text" id="msg"></textarea>
+              <small id="textMessage" class="text_msg"></small>
+          </div>
+          <small id="textForm" class="text_msg"></small>
+          <div class="contact__button">
+              <button type="submit">SEND</button>
+          </div>
+        </form>
+        <div class="contact__direct">
+          <div class="contact__person">
+            <p class="contact__email">nubia@nuvi.studio</p>
+            <p class="contact__phone">+55 21 98767-3245</p>
+          </div>
+          <div class="contact__person">
+            <p class="contact__email">vitor@nuvi.studio</p>
+            <p class="contact__phone">+55 21 98767-3245</p>
+          </div>
         </div>
-        <div>
-            <label class="contact__label" for="mail">Email</label>
-            <input class="contact__input" type="email" id="email" />
-            <small id="textEmail" class="text_msg"></small>
+        <div class="social-media">
+          <img class="social-media__img" src="./assets/img/instagram.svg" alt="Image with link to social network Instagram">
+          <img class="social-media__img" src="./assets/img/linkedin.svg" alt="Image with link to social network LinkedIn">
+          <img class="social-media__img" src="./assets/img/dribbble.svg" alt="Image with link to social network Dribbble">
+          <img class="social-media__img" src="./assets/img/behance.svg" alt="Image with link to social network Behance">
         </div>
-        <div>
-            <label class="contact__label" for="msg">Message</label>
-            <textarea class="contact__text" id="msg"></textarea>
-            <small id="textMessage" class="text_msg"></small>
+        <div class="about__place">
+          <img class="location-pin" src="./assets/img/based_in_rio.svg" alt="Based in Rio Brazil">
         </div>
-        <small id="textForm" class="text_msg"></small>
-        <div class="contact__button">
-            <button type="submit">SEND</button>
-        </div>
-      </form>
-      <div class="contact__direct">
-        <div class="contact__person">
-          <p class="contact__email">nubia@nuvi.studio</p>
-          <p class="contact__phone">+55 21 98767-3245</p>
-        </div>
-        <div class="contact__person">
-          <p class="contact__email">vitor@nuvi.studio</p>
-          <p class="contact__phone">+55 21 98767-3245</p>
-        </div>
-      </div>
-      <div class="social-media">
-        <img class="social-media__img" src="./assets/img/instagram.svg" alt="Image with link to social network Instagram">
-        <img class="social-media__img" src="./assets/img/linkedin.svg" alt="Image with link to social network LinkedIn">
-        <img class="social-media__img" src="./assets/img/dribbble.svg" alt="Image with link to social network Dribbble">
-        <img class="social-media__img" src="./assets/img/behance.svg" alt="Image with link to social network Behance">
-      </div>
-      <div class="about__place">
-        <img class="location-pin" src="./assets/img/based_in_rio.svg" alt="Based in Rio Brazil">
-      </div>
+      </div>  
       <div class="copyright">
-        &#169; NUVI STUDIO  &#9130; DEV. BARBARA MEIRA E VIVIAN DUARTE
+        &#169; NUVI STUDIO  &#9130; DEVS BARBARA MEIRA AND VIVIAN DUARTE
       </div>
     </footer>
     <script type="text/javascript" src="./assets/js/contato.js">

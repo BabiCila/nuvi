@@ -15,13 +15,13 @@
     <header class="header__box-new">
       <nav class="container-new">
         <div>
-          <img src="./assets/img/logo.svg" class="logo-new">
+          <img src="./assets/img/logo.svg" class="logo-new" alt="Nuvi logo">
         </div>
         <div class="buttons">
-          <a class="btn" href="./index.html">EN</a>
+          <a class="btn" href="./index.html" alt="Link to portuguese page">EN</a>
           <input type="checkbox" id="menu" class="menu__check">
           <label for="menu">
-            <img src="./assets/img/icon_menu.svg" class="menu__icon-new">
+            <img src="./assets/img/icon_menu.svg" class="menu__icon-new" alt="menu button">
           </label>
           <ul class="menu__list">
             <li class="menu__item">
@@ -56,12 +56,12 @@
           <h2 class="portfolio__title">Portfolio</h2>
           <h3 class="portfolio__subtitle">What kind of project do you need?</h3>
           <div class="portfolio__projects">
-           <button class="portfolio__button animation"></button>
-           <button class="portfolio__button intro"></button>
-           <button class="portfolio__button design"></button>
-           <button class="portfolio__button redesign"></button>
-           <button class="portfolio__button custom"></button>
-           <button class="portfolio__button graphic"></button>
+           <button class="portfolio__button animation" alt="Logo animation"></button>
+           <button class="portfolio__button intro" alt="Intro and others"></button>
+           <button class="portfolio__button design" alt="Logo design"></button>
+           <button class="portfolio__button redesign" alt="Logo redesign"></button>
+           <button class="portfolio__button custom" alt="Custom animations"></button>
+           <button class="portfolio__button graphic" alt="Graphic design"></button>
           </div>
        
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -93,16 +93,16 @@
             <h3 class="about__subtitle">Lorem ipsum dolor, sit amet consectetur</h3>
             <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore incidunt cupiditate, vitae dolorum nisi velit illum dolor labore nemo, et consectetur qui repellat cumque eaque ea eum ut doloribus esse nam veniam quam, magnam eveniet neque. Eligendi molestiae accusantium eveniet illum. Unde numquam rem est voluptas, eligendi culpa! Distinctio voluptates repudiandae soluta alias nihil voluptatibus repellendus, qui reiciendis quidem vero, dolore doloribus libero maxime officia eius quis repellat blanditiis.</p>
           </div>
-          <div class="about__colab">
-            <div class="colaborator">
-              <img src="./assets/img/foto_nubia.png" alt="" class="colaborator__img">
-              <h2 class="colaborator__title">Nubia Sardou</h2>
-              <p class="colaborator__subtitle">Creative Director and Founder</p>
+          <div class="about__founder">
+            <div class="founder">
+              <img src="./assets/img/foto_nubia.png" alt="Photo of the first founder" class="founder__img">
+              <h2 class="founder__title">Nubia Sardou</h2>
+              <p class="founder__subtitle">Creative Director and Founder</p>
             </div>
-            <div class="colaborator">
-              <img src="./assets/img/foto_vitor.png" alt="" class="colaborator__img">
-              <h2 class="colaborator__title">Vitor Farias</h2>
-              <p class="colaborator__subtitle">Creative Director and Founder</p>
+            <div class="founder">
+              <img src="./assets/img/foto_vitor.png" alt="Photo of the second founder" class="founder__img">
+              <h2 class="founder__title">Vitor Farias</h2>
+              <p class="founder__subtitle">Creative Director and Founder</p>
             </div>
           </div>
           
@@ -113,48 +113,49 @@
     <footer class="final">
       <div class="contact" id="contact">
         <h2 class="contact__title">Let's talk</h2>
-      <form class="contact__form" action="/pagina-processa-dados-do-form" method="post">
-        <div>
-            <label class="contact__label" for="name">Name</label>
-            <input class="contact__input" type="text" id="name" />
-            <small id="textName" class="text_msg"></small>
+        <form class="contact__form" action="/pagina-processa-dados-do-form" method="post">
+          <div>
+              <label class="contact__label" for="name">Name</label>
+              <input class="contact__input" type="text" id="name" />
+              <small id="textName" class="text_msg"></small>
+          </div>
+          <div>
+              <label class="contact__label" for="mail">Email</label>
+              <input class="contact__input" type="email" id="email" />
+              <small id="textEmail" class="text_msg"></small>
+          </div>
+          <div>
+              <label class="contact__label" for="msg">Message</label>
+              <textarea class="contact__text" id="msg"></textarea>
+              <small id="textMessage" class="text_msg"></small>
+          </div>
+          <small id="textForm" class="text_msg"></small>
+          <div class="contact__button">
+              <button type="submit">SEND</button>
+          </div>
+        </form>
+        <div class="contact__direct">
+          <div class="contact__person">
+            <p class="contact__email">nubia@nuvi.studio</p>
+            <p class="contact__phone">+55 21 98767-3245</p>
+          </div>
+          <div class="contact__person">
+            <p class="contact__email">vitor@nuvi.studio</p>
+            <p class="contact__phone">+55 21 98767-3245</p>
+          </div>
         </div>
-        <div>
-            <label class="contact__label" for="mail">Email</label>
-            <input class="contact__input" type="email" id="email" />
-            <small id="textEmail" class="text_msg"></small>
+        <div class="social-media">
+          <img class="social-media__img" src="./assets/img/instagram.svg" alt="Image with link to social network Instagram">
+          <img class="social-media__img" src="./assets/img/linkedin.svg" alt="Image with link to social network LinkedIn">
+          <img class="social-media__img" src="./assets/img/dribbble.svg" alt="Image with link to social network Dribbble">
+          <img class="social-media__img" src="./assets/img/behance.svg" alt="Image with link to social network Behance">
         </div>
-        <div>
-            <label class="contact__label" for="msg">Message</label>
-            <textarea class="contact__text" id="msg"></textarea>
-            <small id="textMessage" class="text_msg"></small>
+        <div class="about__place">
+          <img class="location-pin" src="./assets/img/based_in_rio.svg" alt="Based in Rio Brazil">
         </div>
-        <small id="textForm" class="text_msg"></small>
-        <div class="contact__button">
-            <button type="submit">SEND</button>
-        </div>
-      </form>
-      <div class="contact__direct">
-        <div class="contact__person">
-          <p class="contact__email">nubia@nuvi.studio</p>
-          <p class="contact__phone">+55 21 98767-3245</p>
-        </div>
-        <div class="contact__person">
-          <p class="contact__email">vitor@nuvi.studio</p>
-          <p class="contact__phone">+55 21 98767-3245</p>
-        </div>
-      </div>
-      <div class="social-media">
-        <img class="social-media__img" src="./assets/img/instagram.svg" alt="">
-        <img class="social-media__img" src="./assets/img/linkedin.svg" alt="">
-        <img class="social-media__img" src="./assets/img/dribbble.svg" alt="">
-        <img class="social-media__img" src="./assets/img/behance.svg" alt="">
-      </div>
-      <div class="about__place">
-        <img class="location-pin" src="./assets/img/based_in_rio.svg" alt="">
-      </div>
+      </div>  
       <div class="copyright">
-        &#169; NUVI STUDIO  &#9130; DEV. BARBARA MEIRA E VIVIAN DUARTE
+        &#169; NUVI STUDIO  &#9130; DEVS BARBARA MEIRA E VIVIAN DUARTE
       </div>
     </footer>
     <script type="text/javascript" src="./assets/js/contato.js">
