@@ -347,19 +347,19 @@ body {
     font-size: 0.85rem;
 }
 
-.about__colab {
+.about__founder {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.colaborator__img {
+.founder__img {
     width: 57%;
     margin: 1em auto 0.5em auto;
 }
 
-.colaborator__title {
+.founder__title {
     color: var(--font-purple);
     font-weight: 750;
     font-size: 0.95rem;
@@ -368,7 +368,7 @@ body {
     line-height: normal;
 }
 
-.colaborator__subtitle {
+.founder__subtitle {
     color: var(--font-lilac);
     font-size: 0.8rem;
 }
