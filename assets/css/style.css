@@ -57,6 +57,10 @@ body {
     width: 5em;
 }
 
+.motion-logo {
+    display: none;
+}
+
 .container-new {
     display: flex;
     padding: 1.8em;
@@ -93,6 +97,10 @@ body {
     right: 1.8em;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 5%;
+}
+
+.menu__list-desktop {
+    display: none;
 }
 
 
@@ -386,11 +394,6 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-     
-
-
-
-
 
 
  /*Portfolio */
@@ -529,5 +532,64 @@ body {
     }
 
 
+    .header__box-new {
+        background-image: url(../img/header_desktop.svg);
+        height: 22vh;
+    }
+
+    .container-new {
+        display: flex;
+        padding: 6em;
+        justify-content:space-between;
+        height: 16vh;
+        align-items: center;
+    }
+
+
+    .logo-new {
+        width: 9.5em;
+        margin-left: 3.5em;
+    }
+
+    .motion-logo {
+        display:inline;
+        margin: 1em 4em;
+        width: 8.4em;
+    }
+
+    .menu__icon-new {
+        display: none;
+    }
+
+    .menu__list-desktop {
+        display: inline-flex;
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-right: 1em;
+
+    }
+
+    .menu__item {
+        padding: 0 2em 0 0;
+        font-size: 1.3em;
+    }
+
+    .menu__link {
+        padding-top: 2em;
+    }
+
+    .buttons {
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 1.9em;
+        padding: 0 1em 0.3em 0;
+    }
+
 }
+
+
 
