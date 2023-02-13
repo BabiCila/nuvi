@@ -395,63 +395,199 @@ body {
 
 @media screen and (min-width: 992px) {
 
-.header__box-new {
-    background-image: url(../img/header_desktop.svg);
-    height: 22vh;
-}
 
-.container-new {
-    display: flex;
-    padding: 6em;
-    justify-content:space-between;
-    height: 16vh;
-    align-items: center;
-}
+ /*Portfolio */
+
+    .portfolio__title {
+        font-size: 2.5rem;
+    }
+
+    .portfolio__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .portfolio__projects {
+        flex-wrap: nowrap;
+        margin: 2em auto 3em;
+        gap: 0.3em;
+    }
+
+    .portfolio__button {
+        height: 3.3em;
+    }
+
+    .carousel {
+        margin: auto 8em;
+    }
+
+    .carousel-inner {
+        width: 70%;
+        margin: auto;
+    }
 
 
-.logo-new {
-    width: 9.5em;
-    margin-left: 3.5em;
+    /* About */
 
-}
+    .about {
+        margin: auto 4em;
+    }
 
-.motion-logo {
-    display:inline;
-    margin: 1em 4em;
-    width: 8.4em;
-}
+    .about__title {
+        font-size: 2.5rem;
+    }
 
-.menu__icon-new {
-    display: none;
-}
+    .about__subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
-.menu__list-desktop {
-    display: inline-flex;
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-right: 1em;
+    .about__text {
+        color: var(--font-lilac-darker);
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 100;
+        font-size: 1.5rem;
+        margin: 1.3em 3em;
+    }
 
-}
+    .about__founder {
+        display: flex;
+        text-align: center;
+        margin: 2rem;
+        flex-direction: row;
+        width: 80%;
+    }
 
-.menu__item {
-    padding: 0 2em 0 0;
-    font-size: 1.3em;
-}
+    .founder__title {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
 
-.menu__link {
-    padding-top: 2em;
-}
+    .founder__subtitle {
+        display: inline-block;
+        font-size: 1.15rem;
+    }
 
-.buttons {
-    align-items: center;
-}
+    .founder {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
-.btn {
-    font-size: 1.9em;
-    padding: 0 1em 0.3em 0;
-}
+    /* Footer */
+
+    .final {
+        background-image: url(../img/rodape_desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .contact {
+        padding: 10em 30em 2em;
+    }
+
+    .contact__title {
+        font-size: 2.2rem;
+        margin-bottom: 1em;
+    }
+
+    .contact__label {
+        font-size: 1rem;
+    }
+
+    .contact__input {
+        line-height: 2rem;
+    }
+
+    .text_msg {
+        font-size: 0.7em;
+    }
+
+    .contact__button button {
+        font-size: 0.9rem;
+        margin: 1.5em;
+    }
+
+    .contact__email {
+        font-size: 1.1rem;
+    }
+
+    .contact__phone {
+        font-size: 0.9rem;
+    }
+
+    .social-media__img {
+        height: 1.6em;
+    }
+
+    .about__place {
+        padding: 4.5em 0 2.5em 0;
+    }
+
+    .location-pin {
+        width: 8.5em;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+
+
+    .header__box-new {
+        background-image: url(../img/header_desktop.svg);
+        height: 22vh;
+    }
+
+    .container-new {
+        display: flex;
+        padding: 6em;
+        justify-content:space-between;
+        height: 16vh;
+        align-items: center;
+    }
+
+
+    .logo-new {
+        width: 9.5em;
+        margin-left: 3.5em;
+    }
+
+    .motion-logo {
+        display:inline;
+        margin: 1em 4em;
+        width: 8.4em;
+    }
+
+    .menu__icon-new {
+        display: none;
+    }
+
+    .menu__list-desktop {
+        display: inline-flex;
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-right: 1em;
+
+    }
+
+    .menu__item {
+        padding: 0 2em 0 0;
+        font-size: 1.3em;
+    }
+
+    .menu__link {
+        padding-top: 2em;
+    }
+
+    .buttons {
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 1.9em;
+        padding: 0 1em 0.3em 0;
+    }
 
 }
 
