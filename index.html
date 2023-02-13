@@ -14,11 +14,26 @@
   <body>
     <header class="header__box-new">
       <nav class="container-new">
-        <div>
+        <div class="logos">
           <img src="./assets/img/logo.svg" class="logo-new" alt="Nuvi logo">
+          <img src="./assets/img/motion_design.svg" class="motion-logo" alt="Logo motion and design">
         </div>
         <div class="buttons">
           <a class="btn" href="./nuvi-pt.html" alt="Link to portuguese page">PT</a>
+          <ul class="menu__list-desktop">
+            <li class="menu__item" onclick="closeMenu()">
+              <a class="menu__link" href="#">Home</a>
+            </li>
+            <li class="menu__item" onclick="closeMenu()">
+              <a class="menu__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="menu__item" onclick="closeMenu()">
+              <a class="menu__link" href="#about">About Us</a>
+            </li>
+            <li class="menu__item" onclick="closeMenu()">
+              <a class="menu__link" href="#contact">Get in touch</a>
+            </li>
+          </ul>
           <input type="checkbox" id="menu" class="menu__check">
           <label for="menu">
             <img src="./assets/img/icon_menu.svg" class="menu__icon-new" alt="menu button">
