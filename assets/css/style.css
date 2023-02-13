@@ -531,24 +531,25 @@ body {
         font-size: 0.7rem;
     }
 
+     /* Header */
 
     .header__box-new {
         background-image: url(../img/header_desktop.svg);
-        height: 22vh;
+        height: 11em;
     }
 
     .container-new {
         display: flex;
-        padding: 6em;
-        justify-content:space-between;
-        height: 16vh;
+        padding: 1.5em;
+        justify-content: space-between;
+        height: 11em;
         align-items: center;
     }
 
 
     .logo-new {
         width: 9.5em;
-        margin-left: 3.5em;
+        margin-left: 2.5em;
     }
 
     .motion-logo {
@@ -572,7 +573,7 @@ body {
     }
 
     .menu__item {
-        padding: 0 2em 0 0;
+        padding: 0 1.5em 0 0;
         font-size: 1.3em;
     }
 
@@ -581,12 +582,14 @@ body {
     }
 
     .buttons {
+        display: flex;
         align-items: center;
+        
     }
 
     .btn {
-        font-size: 1.9em;
-        padding: 0 1em 0.3em 0;
+        font-size: 1.7em;
+        padding: 0 0.5em 0 0;
     }
 
 }
