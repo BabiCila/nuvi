@@ -1,0 +1,222 @@
+@import url('/assets/css/style.css');
+
+/* portfolio */
+
+#portfolio {
+    height: 5em;
+    position: absolute;
+    top: 85%;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio__title {
+    color: var(--font-purple);
+    font-weight: 749;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.portfolio__subtitle {
+    color: var(--font-lilac-darker);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.portfolio__projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 64%;
+    margin: 2em auto;
+    gap: 0.3em;
+}
+
+.portfolio__button {
+    width: 48%;
+    height: 2.7em;
+    border: none;
+    border-radius: 0.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+.animation {
+    background-image: url(../img/logo_animation.svg);
+}
+
+.design {
+    background-image: url(../img/logo_design.svg);
+}
+
+.custom {
+    background-image: url(../img/custom_animation.svg);
+}
+
+.intro {
+    background-image: url(../img/intro_e_outro.svg);
+}
+
+.redesign {
+    background-image: url(../img/logo_redesign.svg);
+}
+
+.graphic{
+    background-image: url(../img/graphic_design.svg);
+}
+
+.carousel {
+    margin: auto 2em;
+}
+
+/* about us */
+
+#about {
+    height: 5em;
+    position: absolute;
+    top: 80%;
+}
+
+.about {
+    padding: 2.8em 1.8em 0 1.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    color: var(--font-purple);   
+    font-weight: 749;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.about__subtitle {
+    color: var(--font-lilac-darker);
+    text-align: justify;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.about__text {
+    color: var(--font-lilac-darker);
+    text-align: justify;
+    line-height: 1rem;
+    font-weight: 100;
+    font-size: 0.85rem;
+}
+
+.about__founder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.founder__img {
+    width: 57%;
+    margin: 1em auto 0.5em auto;
+}
+
+.founder__title {
+    color: var(--font-purple);
+    font-weight: 750;
+    font-size: 0.95rem;
+    margin-top: 0.4em;
+    margin-bottom: auto;
+    line-height: normal;
+}
+
+.founder__subtitle {
+    color: var(--font-lilac);
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 992px) {
+
+
+ /*Portfolio */
+
+    .portfolio__title {
+        font-size: 2.5rem;
+    }
+
+    .portfolio__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .portfolio__projects {
+        flex-wrap: nowrap;
+        margin: 2em auto 3em;
+        gap: 0.3em;
+    }
+
+    .portfolio__button {
+        height: 3.3em;
+    }
+
+    .carousel {
+        margin: auto 8em;
+    }
+
+    .carousel-inner {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    /* About */
+
+    .about {
+        margin: auto 4em;
+    }
+
+    .about__title {
+        font-size: 2.5rem;
+    }
+
+    .about__subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about__text {
+        color: var(--font-lilac-darker);
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 100;
+        font-size: 1.5rem;
+        margin: 1.3em 3em;
+    }
+
+    .about__founder {
+        display: flex;
+        text-align: center;
+        margin: 2rem;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .founder__title {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
+
+    .founder__subtitle {
+        display: inline-block;
+        font-size: 1.15rem;
+    }
+
+    .founder {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+

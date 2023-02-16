@@ -1,0 +1,164 @@
+@import url('/assets/css/style.css');
+
+.header__box-new { 
+    background-image: url(../img/header_mobile.svg);
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100vw;
+    height: 14.5vh;
+    z-index: 2;
+}
+
+.logo-new {
+    width: 5em;
+}
+
+.motion-logo {
+    display: none;
+}
+
+.container-new {
+    display: flex;
+    padding: 1.8em;
+    justify-content: space-between;
+    height: 14.5vh;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    padding-right: 1.5em;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--font-white);
+}
+
+.menu__icon-new {
+    width: 1.4em;
+}
+
+.menu__check {
+    display: none;
+}
+
+.menu__list {
+    margin-top: 0.6em;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: var(--font-purple);
+    padding-top: 0.6em;
+    padding-bottom: 0.8em;
+    right: 1.8em;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.menu__list-desktop {
+    display: none;
+}
+
+
+.menu__check:checked ~ .menu__list {
+    display: block;
+}
+
+.menu__btn-close {
+    padding-top: 0.2em;
+    padding-right: 0;
+}
+
+.menu__item {
+    color: var(--font-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.3em 1em 0.9em 0;
+    text-align: end;
+}
+
+.menu__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--font-white);
+    font-weight: 700;
+}
+
+.menu__link:visited {
+    color:white;
+}
+
+/* videos */
+
+.videos {
+    background-color: var(--font-lilac);
+    height: 40em;
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Header */
+
+    .header__box-new {
+        background-image: url(../img/header_desktop.svg);
+        height: 11em;
+    }
+
+    .container-new {
+        display: flex;
+        padding: 1.5em;
+        justify-content: space-between;
+        height: 11em;
+        align-items: center;
+    }
+
+
+    .logo-new {
+        width: 9.5em;
+        margin-left: 2.5em;
+    }
+
+    .motion-logo {
+        display:inline;
+        margin: 1em 4em;
+        width: 8.4em;
+    }
+
+    .menu__icon-new {
+        display: none;
+    }
+
+    .menu__list-desktop {
+        display: inline-flex;
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-right: 1em;
+
+    }
+
+    .menu__item {
+        padding: 0 1.5em 0 0;
+        font-size: 1.3em;
+    }
+
+    .menu__link {
+        padding-top: 2em;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .btn {
+        font-size: 1.7em;
+        padding: 0 0.5em 0 0;
+    }
+
+}
