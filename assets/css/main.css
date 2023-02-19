@@ -6,7 +6,7 @@
     margin: auto 1.8em;
 }
 
-#portfolio {
+#pre-portfolio {
     height: 5em;
     position: absolute;
     top: 85%;
@@ -47,10 +47,10 @@
 
 /* about us */
 
-#about {
+#pre-about {
     height: 5em;
     position: absolute;
-    top: 80%;
+    top: 95%;
 }
 
 .about {
@@ -113,6 +113,10 @@
 
 
     /*Portfolio */
+
+    #pre-portfolio {
+        top: 75%;
+    }
 
     .box-container {
         max-width: 1024px;
@@ -180,6 +184,10 @@
 
 
     /* About */
+
+    #pre-about {
+        top: 92%;
+    }
 
     .about__title {
         font-size: 2.5rem;
