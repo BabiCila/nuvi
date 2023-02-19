@@ -171,12 +171,11 @@
     .videos {
         height: 65em;
         position: relative;
-        background-color: transparent;
     }
 
     .home_video {
         position: absolute;
-        top: 13%;
+        top: 11em;
         height: 60em;
         width: 100%;
     }
