@@ -92,6 +92,10 @@
 
 /* videos */
 
+#pre-video {
+    height: 5.5em;
+}
+
 .videos {
     background-color: transparent;
     height: 32em;
@@ -99,12 +103,19 @@
     vertical-align: baseline;
 }
 
-.home_video {
+.main_video {
+    object-fit: cover;
+    width: 100%;
+    height: 102%;
+    top: 6.5em;
+}
+
+/* .home_video {
     position: absolute;
     top: 6%;
     height: 22em;
     width: 100%;
-}
+} */
 
 @media screen and (min-width: 992px) {
 
