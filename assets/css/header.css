@@ -8,7 +8,7 @@
     position: fixed;
     width: 100vw;
     height: 14.5vh;
-    z-index: 2;
+    z-index: 10;
 }
 
 .logo-new {
@@ -117,10 +117,12 @@
 
     .container-new {
         display: flex;
-        padding: 1.5em;
-        justify-content: space-around;
+        padding: 0 4.7em;
+        justify-content: space-between;
         height: 11em;
         align-items: center;
+        max-width: 1440px;
+        margin: auto;
     }
 
 
