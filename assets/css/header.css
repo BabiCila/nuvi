@@ -1,7 +1,7 @@
 @import url('/assets/css/style.css');
 
 .header__box-new { 
-    background-image: url(../img/header_mobile.svg);
+    background-color: var(--font-purple);
     background-size: 100%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     display: none;
     position: absolute;
     list-style: none;
-    background-color: var(--font-purple);
+    background-color: var(--lilac);
     padding-top: 0.6em;
     padding-bottom: 0.8em;
     right: 1.8em;
@@ -111,7 +111,7 @@
     /* Header */
 
     .header__box-new {
-        background-image: url(../img/header_desktop.svg);
+        background-image: var(--font-purple);
         height: 11em;
     }
 
