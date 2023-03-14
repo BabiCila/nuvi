@@ -43,6 +43,12 @@
     margin: 1.5em auto;
 }    
 
+.carousel-indicators [data-bs-target] {
+    width: 3px;
+    height: 3px;
+    border-bottom: 0px solid transparent;
+}    
+
 /* about us */
 
 #pre-about {
@@ -136,7 +142,7 @@
 
     .portfolio__projects {
         flex-wrap: nowrap;
-        margin: 2em auto 3em;
+        margin: 2em 45em 3em;
         gap: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -185,6 +191,10 @@
 
     #pre-about {
         top: 92%;
+    }
+
+    .about {
+        margin: 0 44em;
     }
 
     .about__title {
