@@ -92,7 +92,9 @@
 .social-media {
     display: flex;
     gap: 1.7em;
+    height: 1.9rem;
     justify-content: center;
+    align-items: baseline;
 }
 
 .social-media__img {
