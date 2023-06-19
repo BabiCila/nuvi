@@ -122,7 +122,36 @@
     font-size: 0.8rem;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    .portfolio__text {
+        font-size: 0.95rem;
+    }
+
+    .portfolio__projects {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about {
+        width: 85%;
+        margin: auto;
+    }
+
+    .about__text {
+        font-size: 0.95rem;
+    }
+
+    .about__founder {
+        display: flex;
+        text-align: center;
+        margin: 2rem;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:2559px) {
 
 
     /*Portfolio */
@@ -138,11 +167,11 @@
     }
 
     .portfolio__title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .portfolio__text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .portfolio__subtitle {
@@ -203,11 +232,11 @@
     }
 
     .about {
-        margin: 0 10em;
+        margin: auto;
     }
 
     .about__title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .about__subtitle {
@@ -220,7 +249,7 @@
         text-align: justify;
         line-height: 1.8rem;
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 1.3em 3em;
     }
 
@@ -233,13 +262,13 @@
 
     .founder__title {
         display: inline-block;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-bottom: 0;
     }
 
     .founder__subtitle {
         display: inline-block;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .founder {
@@ -250,7 +279,7 @@
 }
 
 
-@media screen and (min-width: 2550px) {
+@media screen and (min-width: 2560px) {
 
 
     /*Portfolio */
