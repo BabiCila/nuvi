@@ -302,6 +302,41 @@
         margin: 0 44em;
     }
 
+    .about__title {
+        color: var(--font-purple);
+        font-weight: 749;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .about__text {
+        color: var(--font-lilac-darker);
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+
+    .about__founder {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 1.6em auto 2em auto;
+    }
+
+    .founder__img {
+        width: 45%;
+        margin: 1em auto 0.5em auto;
+    }
+
+    .founder__title {
+        font-size: 1.3rem;
+    }
+
+    .founder__subtitle {
+        font-size: 1.1rem;
+    }
 }
 
 

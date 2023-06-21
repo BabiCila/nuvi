@@ -209,6 +209,15 @@
         width: 8.4em;
     }
 
+    .menu__list-desktop {
+      display: inline-flex;
+      list-style-type: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+    
     .menu__icon-new {
         display: none;
     }

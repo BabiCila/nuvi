@@ -193,5 +193,49 @@
 
 }
 
+@media screen and (min-width: 2560px) {
+
+
+    .final {
+        background-image: url(../img/rodape_desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 25%;
+    }
+
+    .contact {
+        margin: 2em 58em 3em;
+    }
+    .contact__title {
+        font-size: 2rem;
+    }
+
+    .contact__label {
+        font-size: 1rem;
+    }
+
+    .contact__input {
+        font-size: 1.3rem;
+    }
+
+    .text_msg {
+        color: var(--font-white);
+        font-size: 0.9em;
+    }
+
+    .contact__email {
+        font-size: 1.3rem;
+    }
+
+    .social-media__img {
+        width: 4%;
+    }
+
+    .about__place {
+        margin-top: 7%;
+        padding: 0.5em 0;
+    }
+}
+
 
 
