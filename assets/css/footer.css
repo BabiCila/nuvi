@@ -3,13 +3,13 @@
 /* footer */
 
 .final {
-    background-image: url(../img/rodape_mobile.svg);
+    background-image: url(../img/rodape_mobile_2.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .contact {
-    padding: 80px 50px 30px 50px;
+    padding: 1px 50px;
 }
 
 .contact__title {
@@ -98,7 +98,7 @@
 }
 
 .social-media__img {
-    width: 8%;
+    width: 7%;
     height: 1.15em;
 }
 
@@ -121,20 +121,43 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-  .contact {
-    width: 60%;
-    text-align: center;
-    margin: auto;
-  }
+    .contact {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        padding: 0px 50px;
+    }
+
+    .final {
+        background-image: url(../img/rodape_desktop_2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 25%;
+    }
+
+    .contact__title {
+        margin-top: 0em;
+        padding-top: 2em;
+    }
+  
+    .social-media__img {
+        width: 6%;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width:2559px) {
 
     /* Footer */
 
+    .about {
+        padding: 2.8em 1.8em 2.8em 1.8em;
+    }
+
     .final {
-        background-image: url(../img/rodape_desktop.svg);
+        background-image: url(../img/rodape_desktop_2.svg);
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 25%;
     }
 
     .contact {
@@ -146,8 +169,8 @@
 
     .contact__title {
         font-size: 2.2rem;
+        margin-top: 2em;
         margin-bottom: 1em;
-        margin-top: 9em;
     }
 
     .contact__label {
@@ -176,7 +199,7 @@
     }
 
     .social-media__img {
-        width: 7%;
+        width: 5%;
     }
 
     .about__place {
@@ -195,19 +218,19 @@
 
 @media screen and (min-width: 2560px) {
 
-
     .final {
-        background-image: url(../img/rodape_desktop.svg);
+        background-image: url(../img/rodape_desktop_2.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: 25%;
     }
 
     .contact {
-        margin: 2em 58em 3em;
+        margin: 0em 58em;
     }
     .contact__title {
         font-size: 2rem;
+        margin-top: 2em;
     }
 
     .contact__label {
@@ -232,8 +255,7 @@
     }
 
     .about__place {
-        margin-top: 7%;
-        padding: 0.5em 0;
+        padding: 1.5em 0;
     }
 }
 
