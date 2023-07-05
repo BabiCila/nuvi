@@ -1,7 +1,31 @@
 @import url('/assets/css/style.css');
 
-/* portfolio */
+/* Home */
 
+.main-video {
+    text-align: center;
+    height: 100%;
+}
+
+.main-video__video {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    min-width: 101%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+    height: 25%;
+}
+
+.videos {
+    background-color: transparent;
+    height: 51em;
+    position: relative;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+/* portfolio */
 
 #pre-portfolio {
     height: 5em;
@@ -123,6 +147,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .videos {
+        height: 52em;
+    }
     
     .portfolio__text {
         font-size: 0.95rem;
@@ -157,6 +185,9 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
+    .videos {
+        height: 53em;
+    }
 
     /*Portfolio */
 
@@ -292,6 +323,10 @@
 
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
 
+    .videos {
+        height: 52em;
+    }
+
     .portfolio__title {
         font-size: 1.8rem;
     }
@@ -299,8 +334,6 @@
     .portfolio__text {
         font-size: 1.4rem;
     }
-
-    
 
     .portfolio__subtitle {
         height: 3.3em;
@@ -389,6 +422,9 @@
 
 @media screen and (min-width: 2560px) {
 
+    .videos {
+        height: 104em;
+    }
 
     /*Portfolio */
 

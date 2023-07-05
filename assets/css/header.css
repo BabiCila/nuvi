@@ -89,21 +89,6 @@
   color: white;
 }
 
-/* videos */
-
-.videos {
-  background-color: transparent;
-  height: 32em;
-  position: relative;
-  vertical-align: baseline;
-}
-
-.home_video {
-  position: absolute;
-  top: 6%;
-  height: 22em;
-  width: 100%;
-}
 
 @media screen and (min-width: 1024px) and (max-width: 1439px){
 
