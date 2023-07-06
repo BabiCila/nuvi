@@ -65,9 +65,16 @@
   <main id="main">
     <section class="videos" id="home">
       <div class="main-video">
-        <video class="main-video__video" webkit-playsinline="" preload="metadata" autoplay="" loop="" muted="" controls=""> 
+        <video class="main-video__video" preload="auto" autoplay="" loop="" muted=""> 
           <source src="./assets/video/nuvi_studio_main_video_with_audio.mp4" type="video/mp4">Sorry, your browser does not support this video format.
+          <div class="buttons__controls">
+            <div id="play-btn" class="video-controls">PLAY</div>
+            <div id="pause-btn" class="video-controls">PAUSE</div>
+            <div id="mute-btn" class="video-controls">MUTE</div>
+            <div id="unmute-btn" class="video-controls">UNMUTE</div>
+          </div>
         </video>
+        
       </div>
       <div id="pre-portfolio"></div>
     </section>

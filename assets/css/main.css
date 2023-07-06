@@ -25,6 +25,36 @@
     overflow: hidden;
 }
 
+.video-controls {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+ 
+#play-btn {
+    left: 5px;
+}
+ 
+#pause-btn {
+    left: 5px;
+}
+ 
+#mute-btn {
+    left: 60px;
+}
+ 
+#unmute-btn {
+    left: 60px;
+}
+
+.buttons__controls {
+    position: absolute;
+    z-index: 15;
+}
+
 /* portfolio */
 
 #pre-portfolio {
