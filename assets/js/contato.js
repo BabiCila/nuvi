@@ -1,3 +1,10 @@
+
+let video = document.getElementById("video1");
+let playBtn = document.getElementById('play-btn');
+let pauseBtn = document.getElementById('pause-btn');
+let muteBtn = document.getElementById('mute-btn');
+let unmuteBtn = document.getElementById('unmute-btn');
+
 let form = document.querySelector('form');
 let nome = document.getElementById('name');
 let email = document.getElementById('email');
@@ -7,6 +14,54 @@ let textName = document.getElementById('textName');
 let textEmail = document.getElementById('textEmail');
 let textForm = document.getElementById('textForm');
 
+
+//BUTTONS CONTROLS
+
+playBtn.addEventListener('click', pausePlayHandler, false);
+pauseBtn.addEventListener('click', pausePlayHandler, false);
+muteBtn.addEventListener('click', muteUnmuteHandler, false);
+unmuteBtn.addEventListener('click', muteUnmuteHandler, false);
+
+
+function pausePlayHandler(e) {
+    if (video1.paused) {
+        // If paused, then play
+        video1.play();
+         // Show pause button and hide play button
+        pauseBtn.style.visibility = 'visible';
+        playBtn.style.visibility = 'hidden';
+    } else {
+        // If playing, then pause
+        video1.pause();
+        // Show play button and hide pause button
+        pauseBtn.style.visibility = 'hidden';
+        playBtn.style.visibility = 'visible';
+    }
+}
+ 
+function muteUnmuteHandler(e) {
+    if (video1.volume == 0.0) {
+        // If muted, then turn it on
+        video1.volume = 1.0;
+        // Show mute button and hide unmute button
+        muteBtn.style.visibility = 'visible';
+        unmuteBtn.style.visibility = 'hidden';
+    } else {
+        // If unmuted, then turn it off
+        video1.volume = 0.0;
+        // Show unmute button and hide mute button
+        muteBtn.style.visibility = 'hidden';
+        unmuteBtn.style.visibility = 'visible';
+    }
+}
+
+
+ 
+
+
+
+
+//FORMULARIO
 
 function validationName(nome) {
     let namePattern = /^([A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+([\-'`][A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+)?)( [A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+([\-'`][A-Za-zéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ]+)?)+$/gm
