@@ -89,6 +89,19 @@
   color: white;
 }
 
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .header__box-new {
+    height: 17vh;
+  }
+
+  .container-new {
+    height: 17vh;
+  }
+
+  .portfolio__subtitle {
+    height: 3em;
+  }
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1439px){
 
