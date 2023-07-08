@@ -56,6 +56,8 @@
     padding: 0.25em 2.4em;
     background-color: var(--font-white);
     margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .contact__direct {
@@ -189,8 +191,8 @@
     }
 
     .contact__button button {
-        font-size: 0.7rem;
-        margin: 1.5em;
+        font-size: 0.8rem;
+        margin: 20px 0;
     }
 
     .contact__email {
@@ -246,8 +248,9 @@
     }
 
     .contact__button button {
-        margin: 20px;
+        margin: 20px 0;
         padding: 0.4em 2.4em;
+        font-size: 0.8em;
     }
 
     .contact__direct {
