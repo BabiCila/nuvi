@@ -183,6 +183,20 @@
     font-size: 0.8rem;
 }
 
+@media screen and (min-width: 480px) and (orientation: landscape) {
+    .portfolio__projects {
+        width: 90%;
+        margin: auto;
+        gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo-animation intro-outro"
+        "custom-animation logo-design"
+        "logo-redesign graphic-design";
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
     .videos {
@@ -212,6 +226,7 @@
         text-align: center;
         margin: 2rem;
         flex-direction: row;
+        gap: 0.3em;
     }
 
     .founder__subtitle {
