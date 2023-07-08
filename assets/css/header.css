@@ -96,6 +96,13 @@
 
   .container-new {
     height: 17vh;
+    margin: 0 1.5em;
+  }
+
+  .motion-logo {
+    display: inline;
+    margin: 1em 2em;
+    width: 5em;
   }
 }
 
@@ -128,7 +135,6 @@
     margin: 1em 3.8em;
     width: 5em;
   }
-
 
   .menu__icon-new {
     display: none;
