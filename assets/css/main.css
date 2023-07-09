@@ -33,11 +33,17 @@
 
 .video-controls {
     position: absolute;
-    width: 50px;
-    height: 20px;
     cursor: pointer;
-    background-color: #FFF;
-    border: 1px solid #000;
+}
+
+.buttons__controls {
+    position: absolute;
+    z-index: 15;
+    bottom: 2.5em;
+}
+
+.main-video__img{
+    height: 1.5em;
 }
  
 #play-btn {
@@ -56,11 +62,6 @@
     left: 60px;
 }
 
-.buttons__controls {
-    position: absolute;
-    z-index: 15;
-    bottom: 2.5em;
-}
 
 /* portfolio */
 
