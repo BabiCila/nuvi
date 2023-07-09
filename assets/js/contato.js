@@ -97,7 +97,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (nome.value == "" && email.value == "" && msg.value == "") {
-    textForm.textContent = "Você precisa preencher todos os campos";
+    textForm.textContent = "Você precisa preencher todos os campos.";
   } else if (
     validationName(nome.value) &&
     validationEmail(email.value) &&
@@ -105,7 +105,7 @@ form.addEventListener("submit", (e) => {
   ) {
     document.getElementById("contact_form").submit();
   } else {
-    textForm.textContent = "Você precisa preeencher todos os campos";
+    textForm.textContent = "Você precisa preeencher todos os campos.";
     console.log("Requisição não atendida");
   }
 });

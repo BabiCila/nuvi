@@ -19,14 +19,14 @@
   <header class="header__box-new">
     <nav class="container-new">
       <div class="logos">
-        <a href="#"><img src="./assets/img/logo.svg" class="logo-new" alt="Nuvi logo"></a>
+        <a href="./#"><img src="./assets/img/logo.svg" class="logo-new" alt="Nuvi logo"></a>
         <img src="./assets/img/motion_design.svg" class="motion-logo" alt="Logo motion and design">
       </div>
       <div class="buttons">
         <a class="btn" href="./nuvi-pt.html" alt="Link to portuguese page">PT</a>
         <ul class="menu__list-desktop">
           <li class="menu__item" onclick="closeMenu()">
-            <a class="menu__link" href="#">Home</a>
+            <a class="menu__link" href="./#">Home</a>
           </li>
           <li class="menu__item" onclick="closeMenu()">
             <a class="menu__link" href="#pre-portfolio">Portfolio</a>
@@ -39,9 +39,9 @@
           </li>
         </ul>
         <input type="checkbox" id="menu" class="menu__check">
-        <fieldset for="menu">
+        <label for="menu">
           <img src="./assets/img/icon_menu.svg" class="menu__icon-new" alt="menu button">
-        </fieldset>
+        </label>
         <ul class="menu__list">
           <li class="menu__item">
             <button class="btn menu__btn-close" id="btn-close" onclick="closeMenu()">x</button>
@@ -110,39 +110,39 @@
           <div id="carouselLogoDesign" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-fieldset="Slide 1"></button>
+                aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="1"
-                aria-fieldset="Slide 2"></button>
+                aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="2"
-                aria-fieldset="Slide 3"></button>
+                aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="3"
-                aria-fieldset="Slide 4"></button>
+                aria-label="Slide 4"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="4"
-                aria-fieldset="Slide 5"></button>
+                aria-label="Slide 5"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="5"
-                aria-fieldset="Slide 6"></button>
+                aria-label="Slide 6"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="6"
-                aria-fieldset="Slide 7"></button>
+                aria-label="Slide 7"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="7"
-                aria-fieldset="Slide 8"></button>
+                aria-label="Slide 8"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="8"
-                aria-fieldset="Slide 9"></button>
+                aria-label="Slide 9"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="9"
-                aria-fieldset="Slide 10"></button>
+                aria-label="Slide 10"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="10"
-                aria-fieldset="Slide 11"></button>
+                aria-label="Slide 11"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="11"
-                aria-fieldset="Slide 12"></button>
+                aria-label="Slide 12"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="12"
-                aria-fieldset="Slide 13"></button>
+                aria-label="Slide 13"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="13"
-                aria-fieldset="Slide 14"></button>
+                aria-label="Slide 14"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="14"
-                aria-fieldset="Slide 15"></button>
+                aria-label="Slide 15"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="15"
-                aria-fieldset="Slide 16"></button>
+                aria-label="Slide 16"></button>
               <button type="button" data-bs-target="#carouselLogoDesign" data-bs-slide-to="16"
-                aria-fieldset="Slide 17"></button>
+                aria-label="Slide 17"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item">
@@ -295,6 +295,11 @@
           <button type="submit" form="contact_form">SEND</button>
         </div>
       </form>
+      <?php if ($_GET['contact_form'] == 'error'): ?>
+        <p class="submit-message">Message could not be sent.</p>
+      <?php elseif (isset($_GET['contact_form'])): ?>
+        <p class="submit-message">Message sent successfully!</p>
+      <?php endif; ?>
       <div class="contact__direct">
         <div class="contact__person">
           <p class="contact__email">nubia@nuvi.studio</p>
