@@ -5,10 +5,10 @@
 .main-video {
     text-align: center;
     height: 97%;
-    display: flex;
-    flex-flow: column;
+    display: inline;
+    /* flex-flow: column;
     align-items: end;
-    justify-content: end;
+    justify-content: end; */
     transform: translate(-50px, 19px);
 }
 
@@ -19,7 +19,7 @@
     left: 50%;
     min-width: 101%;
     min-height: 100%;
-    transform: translate(-46.5%,-50%);
+    transform: translate(-50%,-50%);
     height: 25%;
 }
 
@@ -40,6 +40,7 @@
     position: absolute;
     z-index: 15;
     bottom: 2.5em;
+    right: 2.5em;
 }
 
 .main-video__img{
@@ -178,14 +179,13 @@
 
 @media screen and (min-width: 480px) and (orientation: landscape) {
 
+    .videos {
+        height: 52em;
+    }
 
     .main-video {
         text-align: center;
         height: 97%;
-        display: flex;
-        flex-flow: column;
-        align-items: end;
-        justify-content: end;
         transform: translate(-50px, 19px);
     }
 
@@ -195,9 +195,18 @@
         left: 50%;
         min-width: 101%;
         min-height: 100%;
-        transform: translate(-46.5%,-69%);
+        transform: translate(-50%,-75%);
         height: 25%;
     }
+
+    .buttons__controls {
+        position: absolute;
+        z-index: 15;
+        bottom: 31em;
+        right: 3em;
+    }
+
+    /*PORTFOLIO*/
 
     .portfolio__projects {
         width: 90%;
@@ -210,22 +219,12 @@
         "custom-animation logo-design"
         "logo-redesign graphic-design";
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-    .videos {
-        height: 52em;
-    }
-    
+     
     .portfolio__text {
         font-size: 0.95rem;
     }
 
-    .portfolio__projects {
-        width: 80%;
-        margin: auto;
-    }
+    /*ABOUT*/
 
     .about {
         width: 75%;
@@ -248,12 +247,18 @@
         color: var(--lilac);
         font-size: 0.7rem;
     }
+
 }
+
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .videos {
         height: 53em;
+    }
+
+    .main-video__video {
+        transform: translate(-50%,-50%);
     }
 
     /*Portfolio */
@@ -327,8 +332,6 @@
         grid-row-start: graphic-design;
     }
 
-
-
     /* About */
 
     #pre-about {
@@ -388,11 +391,18 @@
     
 }
 
+
+
+
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
 
 
     .videos {
         height: 52em;
+    }
+
+    .main-video__video {
+        transform: translate(-50%,-50%);
     }
 
     .portfolio__title {
@@ -494,6 +504,10 @@
         height: 104em;
     }
 
+    .main-video__video {
+        transform: translate(-50%,-50%);
+    }
+
     /*Portfolio */
 
     .portfolio__projects {
@@ -520,8 +534,7 @@
     /* About */
 
     .about {
-        margin: 0 44em;
-        padding: 2.8em 1.8em 2.8em 1.8em;
+        padding: 2.8em 20em 2.8em 20em;
     }
 
     .about__title {
