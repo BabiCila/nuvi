@@ -3,7 +3,7 @@
 /* footer */
 
 .final {
-    background-image: url(../img/rodape_mobile_2.svg);
+    background-image: url(../img/rodape_mobile_3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -128,18 +128,19 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .final {
+        background-image: url(../img/rodape_desktop_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 25%;
+    }
+
     .contact {
         width: 60%;
         text-align: center;
         margin: auto;
         padding: 0px 50px;
-    }
-
-    .final {
-        background-image: url(../img/rodape_desktop_2.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: 25%;
     }
 
     .contact__title {
@@ -156,12 +157,9 @@
 
     /* Footer */
 
-    .about {
-        padding: 2.8em 1.8em 2.8em 1.8em;
-    }
 
     .final {
-        background-image: url(../img/rodape_desktop_2.svg);
+        background-image: url(../img/rodape_desktop_3.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: 25%;
@@ -228,6 +226,13 @@
 
 @media screen and (min-width: 1440px) and (max-width:2559px) {
 
+    .final {
+        background-image: url(../img/rodape_desktop_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 25%;
+    }
+
     .contact {
         margin: 0em 26em;
     }
@@ -282,7 +287,7 @@
 @media screen and (min-width: 2560px) {
 
     .final {
-        background-image: url(../img/rodape_desktop_2.svg);
+        background-image: url(../img/rodape_desktop_3.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: 25%;
