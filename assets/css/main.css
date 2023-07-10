@@ -180,7 +180,7 @@
 @media screen and (min-width: 480px) and (orientation: landscape) {
 
     .videos {
-        height: 52em;
+        height: 24em;
     }
 
     .main-video {
@@ -191,11 +191,11 @@
 
     .main-video__video {
         position: absolute;
-        top: 51%;
+        top: 70%;
         left: 50%;
         min-width: 101%;
-        min-height: 100%;
-        transform: translate(-50%,-75%);
+        min-height: 130%;
+        transform: translate(-50%,-60%);
         height: 25%;
     }
 
@@ -254,7 +254,17 @@
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .videos {
-        height: 53em;
+        height: 38em;
+    }
+
+    .main-video__video {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 135%;
+        transform: translate(-50%,-60%);
+        height: 25%;
     }
 
     .main-video__video {
@@ -398,12 +408,19 @@
 
 
     .videos {
-        height: 52em;
+        height: 58em;
     }
 
     .main-video__video {
-        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 130%;
+        transform: translate(-50%,-60%);
+        height: 25%;
     }
+
 
     .portfolio__title {
         font-size: 1.8rem;
@@ -501,12 +518,19 @@
 @media screen and (min-width: 2560px) {
 
     .videos {
-        height: 104em;
+        height: 107em;
     }
 
     .main-video__video {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        min-width: 101%;
+        min-height: 130%;
         transform: translate(-50%,-50%);
+        height: 25%;
     }
+
 
     /*Portfolio */
 
