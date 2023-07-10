@@ -483,8 +483,9 @@
     /*Portfolio */
 
     .portfolio__projects {
+        width: 50%;
         flex-wrap: nowrap;
-        margin: 2em 45em 3em;
+        margin: 2em 39em 3em;
         gap: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
