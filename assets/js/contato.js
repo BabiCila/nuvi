@@ -1,8 +1,6 @@
 let video = document.getElementById("video1");
 let playBtn = document.getElementById("play-btn");
 let pauseBtn = document.getElementById("pause-btn");
-let muteBtn = document.getElementById("mute-btn");
-let unmuteBtn = document.getElementById("unmute-btn");
 
 let form = document.querySelector("form");
 let nome = document.getElementById("name");
@@ -17,8 +15,6 @@ let textForm = document.getElementById("textForm");
 
 playBtn.addEventListener("click", pausePlayHandler, false);
 pauseBtn.addEventListener("click", pausePlayHandler, false);
-muteBtn.addEventListener("click", muteUnmuteHandler, false);
-unmuteBtn.addEventListener("click", muteUnmuteHandler, false);
 
 function pausePlayHandler(e) {
   if (video1.paused) {
@@ -36,21 +32,6 @@ function pausePlayHandler(e) {
   }
 }
 
-function muteUnmuteHandler(e) {
-  if (video1.volume == 0.0) {
-    // If muted, then turn it on
-    video1.volume = 1.0;
-    // Show mute button and hide unmute button
-    muteBtn.style.visibility = "visible";
-    unmuteBtn.style.visibility = "hidden";
-  } else {
-    // If unmuted, then turn it off
-    video1.volume = 0.0;
-    // Show unmute button and hide mute button
-    muteBtn.style.visibility = "hidden";
-    unmuteBtn.style.visibility = "visible";
-  }
-}
 
 //FORMULARIO
 

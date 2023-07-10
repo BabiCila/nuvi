@@ -9,7 +9,7 @@
     flex-flow: column;
     align-items: end;
     justify-content: end;
-    transform: translate(-129px, 19px);
+    transform: translate(-50px, 19px);
 }
 
 
@@ -19,7 +19,7 @@
     left: 50%;
     min-width: 101%;
     min-height: 100%;
-    transform: translate(-50%,-50%);
+    transform: translate(-46.5%,-50%);
     height: 25%;
 }
 
@@ -52,14 +52,6 @@
  
 #pause-btn {
     left: 5px;
-}
- 
-#mute-btn {
-    left: 60px;
-}
- 
-#unmute-btn {
-    left: 60px;
 }
 
 
@@ -185,6 +177,28 @@
 }
 
 @media screen and (min-width: 480px) and (orientation: landscape) {
+
+
+    .main-video {
+        text-align: center;
+        height: 97%;
+        display: flex;
+        flex-flow: column;
+        align-items: end;
+        justify-content: end;
+        transform: translate(-50px, 19px);
+    }
+
+    .main-video__video {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        min-width: 101%;
+        min-height: 100%;
+        transform: translate(-46.5%,-69%);
+        height: 25%;
+    }
+
     .portfolio__projects {
         width: 90%;
         margin: auto;
