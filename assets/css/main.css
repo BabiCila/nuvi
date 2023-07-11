@@ -409,13 +409,10 @@
         position: absolute;
         top: 280%;
     }
-    
 }
 
 
-
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-
 
     .videos {
         height: 58em;
@@ -431,6 +428,13 @@
         height: 25%;
     }
 
+    /*Portfolio */
+
+    #pre-portfolio {
+        height: 5em;
+        position: absolute;
+        top: 105%;
+    }
 
     .portfolio__title {
         font-size: 1.8rem;
@@ -523,6 +527,12 @@
         margin: 1em auto 0.5em auto;
     }
 
+    #contact {
+        height: 5em;
+        position: absolute;
+        top: 345%;
+    }
+
 }
 
 @media screen and (min-width: 2560px) {
@@ -539,6 +549,12 @@
         min-height: 130%;
         transform: translate(-50%,-50%);
         height: 25%;
+    }
+
+    #pre-portfolio {
+        height: 5em;
+        position: absolute;
+        top: 108%;
     }
 
 
@@ -563,6 +579,12 @@
 
     .portfolio__text {
         font-size: 1.5rem;
+    }
+
+    #pre-about {
+        height: 5em;
+        position: absolute;
+        top: 86%;
     }
 
     /* About */
@@ -606,5 +628,6 @@
     .founder__subtitle {
         font-size: 1.1rem;
     }
+
 }
 
