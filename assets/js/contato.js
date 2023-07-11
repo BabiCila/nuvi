@@ -1,6 +1,6 @@
 let video = document.getElementById("video1");
-let playBtn = document.getElementById("play-btn");
-let pauseBtn = document.getElementById("pause-btn");
+// let playBtn = document.getElementById("play-btn");
+// let pauseBtn = document.getElementById("pause-btn");
 
 let form = document.querySelector("form");
 let nome = document.getElementById("name");
@@ -13,24 +13,48 @@ let textForm = document.getElementById("textForm");
 
 //BUTTONS CONTROLS
 
-playBtn.addEventListener("click", pausePlayHandler, false);
-pauseBtn.addEventListener("click", pausePlayHandler, false);
 
-function pausePlayHandler(e) {
-  if (video1.paused) {
-    // If paused, then play
-    video1.play();
-    // Show pause button and hide play button
-    pauseBtn.style.visibility = "visible";
-    playBtn.style.visibility = "hidden";
-  } else {
-    // If playing, then pause
-    video1.pause();
-    // Show play button and hide pause button
-    pauseBtn.style.visibility = "hidden";
-    playBtn.style.visibility = "visible";
-  }
+
+video.addEventListener("click", playPause)
+
+function playPause() {
+    if (video1.paused) {
+        // If paused, then play
+        video1.play();
+        // Show pause button and hide play button
+        // pauseBtn.style.visibility = "visible";
+        // playBtn.style.visibility = "hidden";
+      } else {
+        // If playing, then pause
+        video1.pause();
+        // Show play button and hide pause button
+        // pauseBtn.style.visibility = "hidden";
+        // playBtn.style.visibility = "visible";
+      }
 }
+
+
+// playBtn.addEventListener("click", pausePlayHandler, false);
+// pauseBtn.addEventListener("click", pausePlayHandler, false);
+
+
+// function pausePlayHandler(e) {
+//     if (video1.paused) {
+//       // If paused, then play
+//       video1.play();
+//       // Show pause button and hide play button
+//       pauseBtn.style.visibility = "visible";
+//       playBtn.style.visibility = "hidden";
+//     } else {
+//       // If playing, then pause
+//       video1.pause();
+//       // Show play button and hide pause button
+//       pauseBtn.style.visibility = "hidden";
+//       playBtn.style.visibility = "visible";
+//     }
+//   }
+
+
 
 
 //FORMULARIO
