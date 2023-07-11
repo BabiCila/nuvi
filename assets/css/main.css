@@ -56,13 +56,14 @@
 }
 
 
-/* portfolio */
-
 #pre-portfolio {
     height: 5em;
     position: absolute;
-    top: 85%;
+    top: 90%;
 }
+
+/* portfolio */
+
 
 .portfolio {
     position: relative;
@@ -176,6 +177,8 @@
     color: var(--lilac);
     font-size: 0.8rem;
 }
+
+
 
 @media screen and (min-width: 480px) and (orientation: landscape) {
 
