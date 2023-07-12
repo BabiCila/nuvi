@@ -47,7 +47,7 @@
 .contact__button button {
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--font-purple);
     font-size: 0.9rem;
     font-weight: 600;
     padding: 0.25em 2.4em;

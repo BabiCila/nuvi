@@ -24,11 +24,15 @@
 }
 
 .videos {
-    background-color: transparent;
+    background-image: url(/assets/img/img_main_video.png);
     height: 51em;
     position: relative;
     vertical-align: baseline;
     overflow: hidden;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .video-controls {
@@ -98,6 +102,7 @@
     background-size: cover;
     margin: 1.5em auto;
 }    
+
 
 .carousel-indicators [data-bs-target] {
     width: 3px;
@@ -211,6 +216,22 @@
 
     /*PORTFOLIO*/
 
+    .logo-animation {
+        grid-area: logo-animation;
+    }
+    
+    .intro-outro {
+        grid-area: intro-outro;
+    }
+    
+    .custom-animation {
+        grid-area: custom-animation;
+    }
+    
+    .logo-design {
+        grid-area: logo-design;
+    }
+
     .portfolio__projects {
         width: 90%;
         margin: auto;
@@ -219,8 +240,23 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "logo-animation intro-outro"
-        "custom-animation logo-design"
-        "logo-redesign graphic-design";
+        "custom-animation logo-design";
+    }
+
+    .logo-animation {
+        grid-area: logo-animation;
+    }
+    
+    .intro-outro {
+        grid-area: intro-outro;
+    }
+    
+    .custom-animation {
+        grid-area: custom-animation;
+    }
+    
+    .logo-design {
+        grid-area: logo-design;
     }
      
     .portfolio__text {
@@ -309,8 +345,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "logo-animation intro-outro"
-        "custom-animation logo-design"
-        "logo-redesign graphic-design";
+        "custom-animation logo-design";
     }
 
     .portfolio__button {
@@ -457,8 +492,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "logo-animation intro-outro"
-        "custom-animation logo-design"
-        "logo-redesign graphic-design";
+        "custom-animation logo-design";
     }
 
     .portfolio__button {
@@ -486,13 +520,6 @@
         grid-area: custom-animation;
     }
 
-    .logo-redesign {
-        grid-area: logo-redesign;
-    }
-
-    .graphic-design {
-        grid-row-start: graphic-design;
-    }
 
     /*About*/
 
@@ -557,20 +584,55 @@
         top: 108%;
     }
 
+    .portfolio__title {
+        font-size: 1.8rem;
+    }
+  
+    .portfolio__text {
+        font-size: 1.4rem;
+    }
+
+    .portfolio__subtitle {
+        height: 3.3em;
+    }
 
     /*Portfolio */
 
     .portfolio__projects {
-        width: 50%;
         flex-wrap: nowrap;
-        margin: 2em 39em 3em;
+        width: 74%;
+        margin: 3em auto;
         gap: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "logo-animation intro-outro"
-        "custom-animation logo-design"
-        "logo-redesign graphic-design";
+        "custom-animation logo-design";
+    }
+
+    .portfolio__button {
+        height: 3.3em;
+    }
+
+    .carousel-inner {
+        /* width: 70%; */
+        margin: auto;
+    }
+
+    .logo-animation {
+        grid-area: logo-animation;
+    }
+
+    .intro-outro {
+        grid-area: intro-outro;
+    }
+
+    .logo-design {
+        grid-area: logo-design; 
+    }
+
+    .custom-animation {
+        grid-area: custom-animation;
     }
 
     .portfolio__title {
