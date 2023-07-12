@@ -20,7 +20,7 @@
     margin-top: 3.5em;
 }
 
-.contact__fieldset, .contact__label {
+.contact__fieldset {
     display: block;
     color: var(--font-white);
     font-size: 0.8rem;
