@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
   <meta property="og:image" content="./assets/img/nuvi_icon_teste.png">
-  <link rel="icon" type="image/png" href="./assets/img/nuvi_icon_teste.png"/>
+  <link rel="icon" type="image/png" href="./assets/img/icon_01.png"/>
 </head>
 
 <body>
@@ -67,15 +67,17 @@
   <main id="main">
     <section class="videos" id="home">
       <div class="main-video">
-        <video id="video1" class="main-video__video" autoplay="" loop="" style="background-image:url(./assets/img/img_main_video.png)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="./assets/video/nuvi_studio_main_video_no_audio_02.mp4#t=00:00:53" data-wf-ignore="true"></video>
+
+        <video id="video1" class="main-video__video" autoplay="autoplay" loop="loop" muted="" playsinline>
+          <source src="./assets/video/nuvi_studio_main_video_no_audio_02.mp4#t=00:00:53" type="video/mp4">
+        </video>
+
+        <!-- <video id="video1" class="main-video__video mobile__video" autoplay="true" loop="true" style="background-image:url(./assets/img/img_main_video.png)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="./assets/video/nuvi_studio_main_video_no_audio_02.mp4#t=00:00:53" data-wf-ignore="true"></video> -->
         
         <!-- <video id="video1" class="main-video__video" webkit-playsinline preload="metadata" autoplay loop muted>
           <source src="./assets/video/nuvi_studio_main_video_no_audio_02.mp4" type="video/mp4">Sorry, your browser does not support this video format.
         </video> -->
-        <!-- <div class="buttons__controls">
-          <div id="play-btn" class="video-controls"><img class="main-video__img " src="/assets/img/play_button.svg"></div>
-          <div id="pause-btn" class="video-controls"><img class="main-video__img" src="/assets/img/pause_button.svg"></div>
-        </div> -->
+
       </div>
       <div id="pre-portfolio"></div>
     </section>
