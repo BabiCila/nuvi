@@ -11,6 +11,14 @@ let textName = document.getElementById("textName");
 let textEmail = document.getElementById("textEmail");
 let textForm = document.getElementById("textForm");
 
+
+let videoSrc = document.getElementById("video_src");
+if (window.document.body.clientWidth < 1024) {
+  videoSrc.src = "./assets/video/nuvi_studio_main_video_no_audio_03.mp4"
+} else {
+  videoSrc.src = "./assets/video/nuvi_studio_main_video_no_audio.mp4"
+}
+
 //BUTTONS CONTROLS
 
 
