@@ -298,22 +298,18 @@
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .videos {
-        height: 38em;
+        height: 640px;
     }
-
-    /* .main-video__video {
+    
+    /*.main-video__video {
         position: absolute;
         top: 58%;
         left: 50%;
         min-width: 100%;
         min-height: 135%;
         transform: translate(-50%,-60%);
-        height: 25%;
-    } */
-
-    /* .main-video__video {
-        transform: translate(-50%,-50%);
-    } */
+        height: 100%;
+    }*/
 
     #pre-portfolio {
         top: 110%;
