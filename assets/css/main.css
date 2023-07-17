@@ -292,6 +292,12 @@
         font-size: 0.7rem;
     }
 
+    #contact {
+        top: 525%;
+        height: 5em;
+        position: absolute;
+    }
+
 }
 
 
