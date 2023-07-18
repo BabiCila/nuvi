@@ -1,5 +1,4 @@
 let video = document.getElementById("video1");
-
 let form = document.querySelector("form");
 let nome = document.getElementById("name");
 let email = document.getElementById("email");
@@ -9,6 +8,13 @@ let textName = document.getElementById("textName");
 let textEmail = document.getElementById("textEmail");
 let textForm = document.getElementById("textForm");
 
+//MENU
+
+function closeMenu() {
+  document.querySelector("#menu").checked = false;
+}
+
+//VIDEOS
 
 let videoSrc = document.getElementById("video_src");
 if (window.document.body.clientWidth < 1024) {
@@ -17,9 +23,7 @@ if (window.document.body.clientWidth < 1024) {
   videoSrc.src = "./assets/video/nuvi_studio_main_video_no_audio.mp4"
 }
 
-//BUTTONS CONTROLS
-
-
+// VIDEO CONTROLS
 
 video.addEventListener("click", playPause)
 
@@ -89,6 +93,3 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-function closeMenu() {
-  document.querySelector("#menu").checked = false;
-}
