@@ -49,12 +49,12 @@
 }
 
 .menu__list {
-  margin-top: 0.6em;
+  margin-top: 0.5em;
   display: none;
   position: absolute;
   list-style: none;
   background-color: var(--lilac);
-  padding-top: 0.6em;
+  padding-top: 0.8em;
   padding-bottom: 0.8em;
   right: 1.8em;
   border-bottom-right-radius: 5%;
@@ -78,7 +78,7 @@
   color: var(--font-white);
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.3em 1em 0.9em 0;
+  padding: 0.7em 1em 0.7em 0;
   text-align: end;
 }
 

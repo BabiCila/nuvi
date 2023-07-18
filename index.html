@@ -27,16 +27,16 @@
       <div class="buttons">
         <a class="btn" href="./nuvi-pt.html" alt="Link to portuguese page">PT</a>
         <ul class="menu__list-desktop">
-          <li class="menu__item" onclick="closeMenu()">
+          <li class="menu__item">
             <a class="menu__link" href="./#">Home</a>
           </li>
-          <li class="menu__item" onclick="closeMenu()">
+          <li class="menu__item">
             <a class="menu__link" href="#pre-portfolio">Portfolio</a>
           </li>
-          <li class="menu__item" onclick="closeMenu()">
+          <li class="menu__item">
             <a class="menu__link" href="#pre-about">About Us</a>
           </li>
-          <li class="menu__item" onclick="closeMenu()">
+          <li class="menu__item">
             <a class="menu__link" href="#contact">Get in touch</a>
           </li>
         </ul>
@@ -45,9 +45,6 @@
           <img src="./assets/img/icon_menu.svg" class="menu__icon-new" alt="menu button">
         </label>
         <ul class="menu__list">
-          <li class="menu__item">
-            <button class="btn menu__btn-close" id="btn-close" onclick="closeMenu()">x</button>
-          </li>
           <li class="menu__item" onclick="closeMenu()">
             <a class="menu__link" href="#">Home</a>
           </li>
@@ -64,7 +61,7 @@
       </div>
     </nav>
   </header>
-  <main id="main">
+  <main id="main" onclick="closeMenu()">
     <section class="videos" id="home">
       <div class="d-flex justify-content-center">
         <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
@@ -270,7 +267,7 @@
     </section>
   </main>
 
-  <footer class="final">
+  <footer class="final" onclick="closeMenu()"> 
     <div class="contact">
       <h2 class="contact__title">Let's talk</h2>
       <form class="contact__form" action="./contact.php" method="post" id="contact_form">
