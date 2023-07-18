@@ -1,19 +1,5 @@
 @import url('/assets/css/style.css');
 
-/* Home */
-
-/* .main-video {
-    text-align: center;
-    height: 97%;
-    display: inline;
-    transform: translate(-50px, 19px);
-} */
-
-/* .mobile__video {
-    background-position: url(../video/nuvi_studio_main_video_no_audio_02.mp4);
-} */
-
-
 .spinner-border {
     position: absolute;
     top: 50%;
@@ -23,7 +9,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* z-index: -100; */
     background-position: 50%;
     background-size: cover;
     margin: auto;
@@ -193,29 +178,11 @@
     font-size: 0.8rem;
 }
 
-
-
 @media screen and (min-width: 480px) and (orientation: landscape) {
 
     .videos {
         height: 26em;
     }
-
-    /* .main-video {
-        text-align: center;
-        height: 97%;
-        transform: translate(-50px, 19px);
-    } */
-
-    /* .main-video__video {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        min-width: 101%;
-        min-height: 130%;
-        transform: translate(-50%,-60%);
-        height: 25%;
-    } */
 
     .buttons__controls {
         position: absolute;
@@ -305,22 +272,11 @@
 
 }
 
-
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .videos {
         height: 640px;
     }
-    
-    /*.main-video__video {
-        position: absolute;
-        top: 58%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 135%;
-        transform: translate(-50%,-60%);
-        height: 100%;
-    }*/
 
     #pre-portfolio {
         top: 550px;
@@ -365,7 +321,6 @@
     }
 
     .carousel-inner {
-        /* width: 70%; */
         margin: auto;
     }
 
@@ -465,16 +420,6 @@
         height: 58em;
     }
 
-    /* .main-video__video {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 130%;
-        transform: translate(-50%,-60%);
-        height: 25%;
-    } */
-
     /*Portfolio */
 
     #pre-portfolio {
@@ -512,7 +457,6 @@
     }
 
     .carousel-inner {
-        /* width: 70%; */
         margin: auto;
     }
 
@@ -531,7 +475,6 @@
     .custom-animation {
         grid-area: custom-animation;
     }
-
 
     /*About*/
 
@@ -580,16 +523,6 @@
         height: 107em;
     }
 
-    /* .main-video__video {
-        position: absolute;
-        top: 53%;
-        left: 50%;
-        min-width: 101%;
-        min-height: 130%;
-        transform: translate(-50%,-50%);
-        height: 25%;
-    } */
-
     #pre-portfolio {
         height: 5em;
         position: absolute;
@@ -627,7 +560,6 @@
     }
 
     .carousel-inner {
-        /* width: 70%; */
         margin: auto;
     }
 
@@ -702,6 +634,5 @@
     .founder__subtitle {
         font-size: 1.1rem;
     }
-
 }
 

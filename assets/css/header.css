@@ -69,11 +69,6 @@
   display: block;
 }
 
-.menu__btn-close {
-  padding-top: 0.2em;
-  padding-right: 0;
-}
-
 .menu__item {
   color: var(--font-white);
   text-decoration: none;
