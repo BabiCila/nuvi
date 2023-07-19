@@ -289,9 +289,9 @@
         </div>
       </form>
       <?php if ($_GET['contact_form'] == 'error'): ?>
-        <p class="submit-message">Message could not be sent.</p>
+        <p class="submit-message">Erro ao enviar a mensagem, tente novamente.</p>
       <?php elseif (isset($_GET['contact_form'])): ?>
-        <p class="submit-message">Message sent successfully!</p>
+        <p class="submit-message">A mensagem foi enviada com sucesso!</p>
       <?php endif;?>
       <div class="contact__direct">
         <div class="contact__person">

@@ -12,11 +12,11 @@
     $email = mail ($to,$subject,$body);
          
     if( $email == true ) {
-        header("Location: https://nuvi.studio/?contact_form#contact", true, 301);
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?contact_form#contact", true, 301);
         echo "Message sent successfully.";
         exit();
     }else {
-        header("Location: http://nuvi.studio?contact_form=error#contact", true, 301);
+        header("Location: " . $_SERVER['HTTP_REFERER'] . "?contact_form=error#contact", true, 301);
         echo "Message could not be sent.";
         exit();
     }
