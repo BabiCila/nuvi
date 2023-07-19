@@ -285,7 +285,7 @@
         </div>
         <small id="textForm" class="text_msg"></small>
         <div class="contact__button">
-          <button type="submit" form="contact_form">Enviar</button>
+          <button type="submit" form="contact_form">ENVIAR</button>
         </div>
       </form>
       <?php if ($_GET['contact_form'] == 'error'): ?>
