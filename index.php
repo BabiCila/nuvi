@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuvi Studio</title>
+  <link rel="stylesheet" href="reset.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -25,41 +26,41 @@
   <header class="header__box-new">
     <nav class="container-new">
       <div class="logos">
-        <a href="#"><img src="./assets/img/logo.svg" class="logo-new" alt="Logo Nuvi"></a>
-        <img src="./assets/img/motion_design.svg" class="motion-logo" alt="Logo motion and design">
+        <a href="./#"><img src="./assets/img/logo.svg" class="logo-new" alt="Nuvi logo"></a>
+        <img src="./assets/img/motion_design.svg" class="motion-logo" alt="Motion and design logo">
       </div>
       <div class="buttons">
-        <a class="btn" href="./index.html" alt="Link para página em inglês">EN</a>
+        <a class="btn" href="./index-pt.php" alt="Link to portuguese page">PT</a>
         <ul class="menu__list-desktop">
           <li class="menu__item">
-            <a class="menu__link" href="#">Home</a>
+            <a class="menu__link" href="./#">Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#pre-portfolio">Portfólio</a>
+            <a class="menu__link" href="#pre-portfolio">Portfolio</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#pre-about">Quem somos</a>
+            <a class="menu__link" href="#pre-about">About Us</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#contact">Contato</a>
+            <a class="menu__link" href="#contact">Get in touch</a>
           </li>
         </ul>
         <input type="checkbox" id="menu" class="menu__check">
         <label for="menu">
-          <img src="./assets/img/icon_menu.svg" class="menu__icon-new" alt="botão de menu">
+          <img src="./assets/img/icon_menu.svg" class="menu__icon-new" alt="menu button">
         </label>
         <ul class="menu__list">
           <li class="menu__item" onclick="closeMenu()">
             <a class="menu__link" href="#">Home</a>
           </li>
           <li class="menu__item" onclick="closeMenu()">
-            <a class="menu__link" href="#pre-portfolio">Portfólio</a>
+            <a class="menu__link" href="#pre-portfolio">Portfolio</a>
           </li>
           <li class="menu__item" onclick="closeMenu()">
-            <a class="menu__link" href="#pre-about">Quem somos</a>
+            <a class="menu__link" href="#pre-about">About Us</a>
           </li>
           <li class="menu__item" onclick="closeMenu()">
-            <a class="menu__link" href="#contact">Contato</a>
+            <a class="menu__link" href="#contact">Get in touch</a>
           </li>
         </ul>
       </div>
@@ -73,17 +74,15 @@
         </div>
       </div>
       <div class="main-video">
-
         <video id="video1" class="main-video__video" autoplay loop="loop" muted playsinline>
           <source id="video_src" src="./assets/video/nuvi_studio_main_video_no_audio_03.mp4" type="video/mp4">
         </video>
-
       </div>
       <div id="pre-portfolio"></div>
     </section>
     <section class="portfolio">
-      <h2 class="portfolio__title">Portfólio</h2>
-      <h3 class="portfolio__text">Que tipo de projeto você está procurando?</h3>
+      <h2 class="portfolio__title">Portfolio</h2>
+      <h3 class="portfolio__text">What kind of project are you looking for?</h3>
       <div class="portfolio__projects">
 
         <div class="logo-animation">
@@ -243,21 +242,28 @@
     <section class="about">
       <div>
         <h2 class="about__title">Nuvi Studio</h2>
-        <p class="about__text">Nos tornamos Nuvi em 2021 com o objetivo de atender clientes de todo o mundo, buscando entregar o máximo de qualidade e personalidade em cada um dos serviços prestados. </p>
-        <p class="about__text">Nossa maior alegria ao realizar cada uma de nossas entregas, desde quando criamos um logo para um negócio que está surgindo até quando trazemos uma marca à vida através de uma animação única, é perceber que uma empresa estará se comunicando de forma mais impactante a ponto de se destacar em seu mercado e elevar os resultados de seu negócio.</p>
-        <p class="about__text">Acreditamos que um processo de trabalho bem definido é o caminho ideal para entregas finais de qualidade e que correspondam as expectativas de cada um de nossos clientes, por isso, traçamos diretamente com cada contato nosso o passo a passo antes de iniciarmos qualquer um de nossos projetos.</p>
-        <p class="about__text">Agora, que você já sabe um pouquinho mais sobre a gente e conhece nosso portfólio, entre em contato para discutirmos sobre qual o pacote ideal para o serviço que você está precisando. Ficaremos muito felizes em atendê-lo!</p>
+        <p class="about__text">We became Nuvi in 2021 with the goal of serving customers from all over the world,
+          seeking to deliver the maximum quality and personality in each of the services provided.</p>
+        <p class="about__text">Our greatest joy in completing each of our deliveries, from when we create a logo for a
+          budding business to when we bring a brand to life through a unique animation, is to realize that a company
+          will be communicating in a more impactful way to the point of standing out in its market and elevating its
+          business results.</p>
+        <p class="about__text">We believe that a well-defined work process is an ideal path for delivering high-quality
+          results that meet each of our customer's expectations, so we directly outline the step-by-step process with
+          each contact before starting any of our projects.</p>
+        <p class="about__text">Now that you know a little bit more about us and have seen our portfolio, please get in
+          touch to discuss what the ideal package is for the service you need. We will be very happy to help you!</p>
       </div>
       <div class="about__founder">
         <div class="founder">
-          <img src="./assets/img/foto_nubia.png" alt="Foto da fundadora" class="founder__img">
+          <img src="./assets/img/foto_nubia.png" alt="Photo of the first founder" class="founder__img">
           <h2 class="founder__title">Nubia Sardou</h2>
-          <p class="founder__subtitle">Designer Gráfico, Motion Designer e Fundadora</p>
+          <p class="founder__subtitle">Graphic Designer, Motion Designer and Founder</p>
         </div>
         <div class="founder">
-          <img src="./assets/img/foto_vitor.png" alt="Foto do fundador" class="founder__img">
+          <img src="./assets/img/foto_vitor.png" alt="Photo of the second founder" class="founder__img">
           <h2 class="founder__title">Vitor Farias</h2>
-          <p class="founder__subtitle">Designer Gráfico, Motion Designer e Fundador</p>
+          <p class="founder__subtitle">Graphic Designer, Motion Designer and Founder</p>
         </div>
         <div id="contact"></div>
       </div>
@@ -266,10 +272,10 @@
 
   <footer class="final" onclick="closeMenu()"> 
     <div class="contact">
-      <h2 class="contact__title">Vamos conversar?</h2>
+      <h2 class="contact__title">Let's talk</h2>
       <form class="contact__form" action="./contact.php" method="post" id="contact_form">
         <div>
-          <fieldset class="contact__fieldset" for="name">Nome</fieldset>
+          <fieldset class="contact__fieldset" for="name">Name</fieldset>
           <input class="contact__input" type="text" id="name" name="from_name" />
           <small id="textName" class="text_msg"></small>
         </div>
@@ -279,20 +285,20 @@
           <small id="textEmail" class="text_msg"></small>
         </div>
         <div>
-          <fieldset class="contact__fieldset" for="msg">Mensagem</fieldset>
+          <fieldset class="contact__fieldset" for="msg">Message</fieldset>
           <textarea class="contact__text" id="msg" name="message"></textarea>
           <small id="textMessage" class="text_msg"></small>
         </div>
         <small id="textForm" class="text_msg"></small>
         <div class="contact__button">
-          <button type="submit" form="contact_form">Enviar</button>
+          <button type="submit" form="contact_form">SEND</button>
         </div>
       </form>
-      <!--<?php if ($_GET['contact_form'] == 'error'): ?>
+      <?php if ($_GET['contact_form'] == 'error'): ?>
         <p class="submit-message">Message could not be sent.</p>
       <?php elseif (isset($_GET['contact_form'])): ?>
         <p class="submit-message">Message sent successfully!</p>
-      <?php endif;?>-->
+      <?php endif;?>
       <div class="contact__direct">
         <div class="contact__person">
           <p class="contact__email">nubia@nuvi.studio</p>
@@ -305,11 +311,11 @@
       </div>
       <div class="social-media">
         <a href="https://www.instagram.com/nuvistudio/" class="social-media__img" target="_blank"><img src="./assets/img/instagram.svg"
-            alt="Imagem com link para rede social Instagram"></a>
+            alt="Image with link to social network Instagram"></a>
         <a href="https://www.linkedin.com/company/nuvi-studio/" class="social-media__img" target="_blank"><img
-            src="./assets/img/linkedin.svg" alt="Imagem com link para rede social LinkedIn"></a>
+            src="./assets/img/linkedin.svg" alt="Image with link to social network LinkedIn"></a>
         <a href="https://dribbble.com/nuvistudio" class="social-media__img" target="_blank"><img src="./assets/img/dribbble.svg"
-            alt="Imagem com link para rede social Dribbble"></a>
+            alt="Image with link to social network Dribbble"></a>
 
       </div>
       <div class="about__place">
@@ -317,7 +323,7 @@
       </div>
     </div>
     <div class="copyright">
-      &#169; NUVI STUDIO - DEVS <a class = "link_devs" href="https://github.com/BabiCila" target="_blank">BARBARA MEIRA</a> E <a class = "link_devs" href="https://github.com/viviandhj" target="_blank">VIVIAN DUARTE</a>
+      &#169; NUVI STUDIO - DEVS <a class = "link_devs" href="https://github.com/BabiCila" target="_blank">BARBARA MEIRA</a> AND <a class = "link_devs" href="https://github.com/viviandhj" target="_blank">VIVIAN DUARTE</a>
     </div>
   </footer>
   <script type="text/javascript" src="./assets/js/contato.js">
