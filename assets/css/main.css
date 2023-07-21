@@ -6,19 +6,16 @@
 }
 
 .videos {
-    height: 52em;
-    position: relative;
-    vertical-align: baseline;
     overflow: hidden;
-    background-position-y: center;
-    background-position-x: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    top: 12vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .main-video {
-    height: auto;
-    overflow: hidden;
+    /* height: auto;
+    overflow: hidden; */
 }
 
 .main-video__video {
@@ -33,14 +30,14 @@
     bottom: -100%;
     left: -100%;
     right: -100%;*/
-    position: fixed;
+    /* position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: 100vh;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .video-controls {
@@ -80,6 +77,7 @@
 .portfolio {
     position: relative;
     padding: 0 1.8em;
+    top: 216px;
 }
 
 .portfolio__title {
@@ -136,6 +134,8 @@
 }
 
 .about {
+    position: relative;
+    top: 216px;
     padding: 2.8em 1.8em 0 1.8em;
     display: flex;
     flex-direction: column;
@@ -189,6 +189,11 @@
 .founder__subtitle {
     color: var(--lilac);
     font-size: 0.8rem;
+}
+
+.final {
+    position: relative;
+    top: 216px;
 }
 
 @media screen and (min-width: 480px) and (orientation: landscape) {
