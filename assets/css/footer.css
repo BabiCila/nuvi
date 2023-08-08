@@ -37,6 +37,10 @@
     height: 35px;
 }
 
+.g-recaptcha {
+    margin-top: 15px;
+}
+
 .contact__text {
     width: 100%;
     border: none;

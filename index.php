@@ -1,5 +1,6 @@
+<?php include 'settings.php'; ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -19,6 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./assets/img/share.png">
   <meta property="og:url" content="https://www.nuvi.studio" /> 
+  <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
 </head>
 
 <body>
@@ -288,6 +290,7 @@
           <textarea class="contact__text" id="msg" name="message"></textarea>
           <small id="textMessage" class="text_msg"></small>
         </div>
+        <div class="g-recaptcha" data-sitekey="<?php echo $captchaKeyPublic; ?>"></div>
         <small id="textForm" class="text_msg"></small>
         <div class="contact__button">
           <button type="submit" form="contact_form">SEND</button>
