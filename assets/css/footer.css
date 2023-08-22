@@ -38,7 +38,16 @@
 }
 
 .g-recaptcha {
-    margin-top: 15px;
+    display: flex;
+}
+
+.container {
+    margin-top: 14px;
+    transform: scale(0.67);
+}
+
+.recaptcha {
+    justify-content: center;
 }
 
 .contact__text {

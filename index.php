@@ -290,7 +290,9 @@
           <textarea class="contact__text" id="msg" name="message"></textarea>
           <small id="textMessage" class="text_msg"></small>
         </div>
-        <div class="g-recaptcha" data-sitekey="<?php echo $captchaKeyPublic; ?>"></div>
+        <div class="container">
+          <div class="g-recaptcha recaptcha" data-sitekey="<?php echo $captchaKeyPublic; ?>"></div>
+        </div>
         <small id="textForm" class="text_msg"></small>
         <div class="contact__button">
           <button type="submit" form="contact_form">SEND</button>
