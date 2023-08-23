@@ -1,4 +1,5 @@
 <?php
+include 'settings.php';
     
     $captcha = isset($_POST['g-recaptcha-response']) ? $_POST['g-recaptcha-response'] : null;
 
@@ -17,7 +18,7 @@
 
 
 
-    $to = 'nubia@nuvi.studio, vitor@nuvi.studio';
+    $to = 'nubia@nuvi.studio, vitor@nuvi.studio, viviandhj@gmail.com';
     $subject = 'Nuvi Contact - ' . $_POST['from_name'];
     $message = $_POST['message'];
     $from_name = $_POST['from_name'];
