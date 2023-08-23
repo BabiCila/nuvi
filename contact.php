@@ -18,7 +18,7 @@ include 'settings.php';
 
 
 
-    $to = 'nubia@nuvi.studio, vitor@nuvi.studio, viviandhj@gmail.com';
+    $to = 'nubia@nuvi.studio, vitor@nuvi.studio';
     $subject = 'Nuvi Contact - ' . $_POST['from_name'];
     $message = $_POST['message'];
     $from_name = $_POST['from_name'];
